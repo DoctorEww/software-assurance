@@ -1,4 +1,5 @@
-# Project Proposal
+# CYBR 8420 - Project Proposal
+## Team Nemo
 
 ## Open-Source Project: Name here
 
@@ -6,9 +7,9 @@
 
 Info here
 
-### Diagram
+### Systems Engineering Diagram
 
-This will be a diagram
+This will be a diagram detailing the systems engineering view of the software
 
 ### Perceived Threats
 
