@@ -37,7 +37,7 @@ Open-source licensing stuff
 
 ## Security Related History - Jensen
 
-Outline of the secirty issues present in the project
+Outline of the security issues present in the project
 
 ## Repo Link
 
