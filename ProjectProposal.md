@@ -7,7 +7,7 @@
 
 Info here
 
-### Systems Engineering Diagram - Adam
+### Systems Engineering Diagram
 
 ![](Engineering%20View.jpg)
 
@@ -23,7 +23,7 @@ Info here
 - Feature 2
 - Feature 3
 
-## Team Motivation - Chris
+## Team Motivation
 
 As we looked at the course syllabus, we focused out attention on projects that would provide our team with a good foundation for a security centered avenue of approach.  We found that there was not a perfect scenario in which our selection would be in a language we were 100% confortable with, existed with many real world uses, and not already combed through by experts to the point that there were not many issues with the program left.  With this in mind, we understood that we would have to focus on the security of a problem and find a program that allowed us to fully work through an issue and learn how the process of contributing to the open source communities worked.
 
@@ -45,7 +45,7 @@ Outline of the security issues present in the project
 
 https://github.com/DoctorEww/software-assurance
 
-## Team Reflection - Chris
+## Team Reflection
 
 From the start, Adam Spanier was a great team lead that gathered all members of the team and ensured that information was distributed to every single person that was involved and encouraged each member which harbored a great working environment.  Initially there was an issue with communication where information was primarily sent through UNO registered emails.  Chris did not have access to that email address during that day, which hindered him from keeping in contact with the team.  The team was able to quickly adjust and add emails to the group email as well as implement a Discord for the team's discussions and Drew quickly created a GitHub repository for our team to collaborate on the project with.
 
