@@ -1,5 +1,5 @@
 # CYBR 8420 - Software Assurance Project
-## Team Nemo (We'll figure it out later)
+## Team Nemo
 
 Team Members:
 1. Drew Griess
