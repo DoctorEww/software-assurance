@@ -9,7 +9,7 @@ Info here
 
 ### Systems Engineering Diagram - Adam
 
-This will be a diagram detailing the systems engineering view of the software
+![](Engineering%20View.jpg)
 
 ### Perceived Threats - Drew
 
