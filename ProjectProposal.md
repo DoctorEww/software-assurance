@@ -29,9 +29,21 @@ As we looked at the course syllabus, we focused out attention on projects that w
 
 After speaking with Dr. Gandhi, it was clear that as a project we should select a topic that would provide us with experience that we could use in a coorporate environment and not just for an individual user. Our primary team motive for the selection of an open source project lied in the desire to provide secure code bases for security based utilities with a coorporate minded focus.  We ended up selecting Bitwarden as the focus of our open source project because of it's core mission of providing trusted security with open source transparency and global access.
 
-## Open-Source Project Description - Justin
+## Open-Source Project Description
 
-It'll be something to do with password managers or ad blockers
+Bitwarden is a password manager designed with the interest of businesses and individuals in mind. The software has numerous features and applications, some of the most notable include the cross-platform capabilities and end-to-end encryption used to securely store and access any number of passwords. Addressing the individual plans offered by Bitwarden, users are able to create a free plan capable of taking advantage of the two features mentioned previously. Free users are also entitled to several core features, including unlimitied devices, stored items, a password generator and more. Business plans offer more advanced core features that appeal to the administrator level of IT. These include features such as audit logs, API access, user groups, technical support, and tools for integration. It is also important to note that the individuals who receive the business Bitwarden accounts also receive all the features provided by Bitwarden's individual program.
+
+The project within Bitwarden being addressed by our team is primarily focused on Bitwarden's desktop application. The software itself is comprised of the following languages:
+
+TypeScript (45%), HTML (34%), SCSS (14%), JavaScript (5%), and Powershell (2%)
+
+The software's Github page has a list of 60 contributors with the three largest being kspearrin, joseph-flinn, and Hinton. The Github page has seen a fair amount of activity throughout the year with heavy activity around the start of the year and around May and June. Looking at the contributions to the master branch, there appear to be very few entirely dead spots in changes.
+
+In terms of use and popularity, Bitwarden seems to be moderately popular. It has been featured in multiple web articles and is well regarded for its capable free tier for individual users. Unlike some other password managers, the lack of a required fee to use and massive storage for free users have been a strong selling point for the software and its related applications. The paid tier has also been regarded as a fairly priced alternative to some of the other paid password managers in the market.
+
+The platform listed for the desktop application applies to all three of the major desktop operating systems: Windows, MacOS, and Linux.
+
+Finally, regarding the documentation on Bitwarden's applications, the information is also open source through the Bitwarden Help project. Valuable documentation can be found on Bitwarden's Help page on their, the [Bitwarden Help Center](https://bitwarden.com/help/ "Bitwarden's Help Center"). The information is regularly updated and offers tools for readers to find other means of communication or even suggest features and documentation changes.
 
 ## Licensing Considerations - Drew
 
