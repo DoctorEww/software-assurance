@@ -15,11 +15,11 @@ For our selected hypothetical environment, we will consider a small IT organizat
 
 ### Perceived Threats
 
-In our selected hypothetical environment of a small IT organization that specializes in providing IT PoS solutions and services there are many threats perceived by users of the software. These threats must be acknowledged to better understand how this software may be exploited and therefore inform our analysis of this software. Below is a list of potential threats perceived by users of the software in our hypothetical environment. 
+In our selected hypothetical environment of a small IT organization that specializes in providing IT PoS solutions and services, there are many threats perceived by users of the software. These threats must be acknowledged to better understand how this software may be exploited and therefore inform our analysis of this software. Below is a list of potential threats perceived by users of the software in our hypothetical environment. 
 
 - Malicious Hacker: This software may be targeted by malicious actors trying to gain access to passwords that hold payment information. Their motivation would be financially or reputationally based. This threat is likely looking for easily accessible targets. 
 
-- Malicious Contributor: As this software is open source, an attacker could make a malicious contribution to the software in an attempt to access the internal network of our hypothetical organization. Their motivation would be to obtain access to as many networks as possible while leaving our hypothetical organization untouched. The threat could also expose potentially sensitive networs to this malicious contributor. 
+- Malicious Contributor: As this software is open source, an attacker could make a malicious contribution to the software in an attempt to access the internal network of our hypothetical organization. Their motivation would be to obtain access to as many networks as possible while leaving our hypothetical organization untouched. The threat could also expose potentially sensitive networks to this malicious contributor. 
 
 - Rogue Employee: This software may be targeted by a rogue employee with access to a computer on the network and wants to access passwords that protect sensitive personal and financial data. Their motivation would be financial or personal. 
 
