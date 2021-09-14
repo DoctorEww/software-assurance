@@ -2,8 +2,9 @@
 ## Team Nemo
 
 Team Members:
-1. Drew Griess
+1. 
 2. Jensen Miller
 3. Justin Rodriquez
 4. Chris Le
 5. Adam Spanier
+6. Drew Griess
