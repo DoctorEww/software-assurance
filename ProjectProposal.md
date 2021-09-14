@@ -13,11 +13,20 @@ For our selected hypothetical environment, we will consider a small IT organizat
 
 ![](Engineering%20View.jpg)
 
-### Perceived Threats - Drew
+### Perceived Threats
 
-- Threats
-- Threats
-- More Threats!
+In our selected hypothetical environment of a small IT organization that specializes in providing high quality IT PoS solutions and services to businesses nationwide there are many threats perceived by users of the software. These threats must be acknowledged to better understand how this software may be exploited and therefore inform our analysis of this software. Below is a list of potential threats perceived by users of the software in our hypothetical environment. 
+
+- Malicious Hacker: This software may be targeted by malicious actors trying to gain access to passwords that hold payment information. Their motivation would be financial or reputation. This threat is likely looking for low hanging fruit type targets. 
+
+- Malicious Contributor: This software is open source so an attacker could make a malicious contribution to the software to try and access the internal network of our hypothetical organization. Their motivation would be to obtain access to as many networks as possible which could leave our hypothetical organization untouched, but it could also expose a sensitive network to this malicious contributor. 
+
+- Rogue Employee: This software may be targeted by a rogue employee who may have a computer on the network and wants to access passwords that secure financial data or other employee information. Their motivation would be financial or personal. 
+
+- Rogue IT Staff: This software may be targeted by IT staff who may not have access to passwords securing financial data or company bank accounts, but may have admin access to computers with Bitwarden on it. Their motivation would be financial or resentment.
+
+- Malicious Client: This software may be targeted by a client gains access to system running Bitwarden. Their motivation would likely be financial or revenge.
+
 
 ### Security Features
 
