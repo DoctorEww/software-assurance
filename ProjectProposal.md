@@ -49,7 +49,7 @@ Finally, regarding the documentation on Bitwarden's applications, the informatio
 
 Open-source licensing stuff
 
-## Security Related History - Jensen
+## Security Related History
 
 The Bitwarden desktop app either suffers from being chronically forgotten in security documentation or is considered a lower priority in comparison to their web app and web extensions. The security policy does not reference the desktop application in any of the scope definition statements instead defining “current release of Bitwarden” as “web vault, browser extension, and mobile apps.” This is not a condemnation as it may simply be a poor turn of phrase since the desktop app appears to just be the “web vault” that has escaped the confines of a browser. 
 
