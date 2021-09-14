@@ -1,7 +1,7 @@
 # CYBR 8420 - Project Proposal
 ## Team Nemo
 
-## Open-Source Project: BitWarden Desktop Application
+# Open-Source Project: BitWarden Desktop Application
 
 ## Hypothetical Operation Environment
 
