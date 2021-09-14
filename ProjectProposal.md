@@ -3,9 +3,9 @@
 
 ## Open-Source Project: BitWarden Desktop Application
 
-## Hypothetical Operation Environment - Justin
+## Hypothetical Operation Environment
 
-Info here
+With the flexibility available by the applications Bitwarden provides and the comprehensive business accounts, one could see Bitwarden applied in a business setting. Hypothetically examining this situation, it is important to understand that Bitwarden touches upon multiple different operational environments. It can operate through user interaction on their own devices and across the network of a business. The expectations of the software, among any environment, would ensure that the passwords and stored information of users or employees is securely contained. The data would be well protected in all three states; it would be protected while at rest, in motion, and in use without any potential exposure to a malicious or unintended recipient. From a business standpoint, it would also be expected that Bitwarden provides the tools and procedures necessary to integrate the software without weakening the overall security of the current infrastructure.
 
 ### Systems Engineering Diagram
 
