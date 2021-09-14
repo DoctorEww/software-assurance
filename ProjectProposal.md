@@ -19,11 +19,15 @@ For our selected hypothetical environment, we will consider a small IT organizat
 - Threats
 - More Threats!
 
-### Security Features - Jensen
+### Security Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- End to End AES-256
+- Built-in 2FA for master password
+- PBKDF2 Key Generation
+- Yearly Audit
+- Code Merges required at least 1 additional Reviewer
+- Automatic timeout clears data arrays
+- Clears passwords from the clipboard after timeout
 
 ## Team Motivation
 
