@@ -13,6 +13,9 @@ Info here
 
 ### Perceived Threats - Drew
 
+This software manages sensitive information for individuals and businesses. Therefore, there are many threats perceived by users of the software in its intended operational environment. Many of the threats overlap from individual personal uses to business uses. We shall define threats as TODO
+
+Malicious Insider: This software is open source so theoretically an attacker could make a malicious contribution to the software. Moreover, this software needs to be installed as an administrator. Therefore there is an inherent risk of trusting the software with the administrator rights on a system for an individual or business. 
 - Threats
 - Threats
 - More Threats!
