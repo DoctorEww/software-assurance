@@ -45,9 +45,19 @@ The platform listed for the desktop application applies to all three of the majo
 
 Finally, regarding the documentation on Bitwarden's applications, the information is also open source through the Bitwarden Help project. Valuable documentation can be found on Bitwarden's Help page on their, the [Bitwarden Help Center](https://bitwarden.com/help/ "Bitwarden's Help Center"). The information is regularly updated and offers tools for readers to find other means of communication or even suggest features and documentation changes.
 
-## Licensing Considerations - Drew
+## Licensing Information
 
-Open-source licensing stuff
+Bitwarden Desktop is licensed under the [GNU General Public License v3.0](https://github.com/bitwarden/desktop/blob/master/LICENSE.txt). This license allows: commercial use, distribution, modification, patent use, and private use. To do any of these, one must include this license and copyright notice, state any changes made to licensed product, disclose the source code when distributing the licensed material, and use the exact same license. Finally, this license contains a limitation of liability and no warranty. More information about this license can be found [here](https://www.gnu.org/licenses/gpl-3.0.en.html). 
+
+## Contributing
+
+Bitwarden Desktop welcomes contributions. They request that all contributions be pull requests against the `master` branch following the [contribution guidelines](https://github.com/bitwarden/desktop/blob/master/CONTRIBUTING.md). These guidelines describe the many ways anyone can contribute to the project as well as a [community forum](https://community.bitwarden.com/) contributors can collaborate at. Common contribution requests include feature requests, bugs, documentation, and translations. Contributors must use a [npm linter](https://www.npmjs.com/package/lint) to format their code in the style Bit Warden Desktop uses.  Before contributing any code, users must sign a [Contributor Agreement](https://cla-assistant.io/bitwarden/desktop) which states you waive all rights to your contributions and profits Bitwarden makes off of your contributions. 
+
+Bitwarden Desktop also welcomes security audits as detailed in their [security policy](https://github.com/bitwarden/desktop/blob/master/SECURITY.md). Bitwarden requests that security issues are disclosed promptly, discreetly, and performed in good faith. This security policy then details what is out-of-scope including self-xss, physical access, and current issues. The policy also outlines that security testers may not perform a denial of service, spamming, social engineering, or physical attempts on Bitwarden property. 
+
+Not listed on Bitwarden Desktop’s GitHub is [their HackerOne profile](https://hackerone.com/bitwarden) where they outline even more contribution guidelines and offer HackerOne reputation for valid reports on all Bitwarden products. 
+
+
 
 ## Security Related History
 
