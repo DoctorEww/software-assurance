@@ -51,7 +51,12 @@ Open-source licensing stuff
 
 ## Security Related History - Jensen
 
-Outline of the security issues present in the project
+The Bitwarden desktop app either suffers from being chronically forgotten in security documentation or is considered a lower priority in comparison to their web app and web extensions. The security policy does not reference the desktop application in any of the scope definition statements instead defining “current release of Bitwarden” as “web vault, browser extension, and mobile apps.” This is not a condemnation as it may simply be a poor turn of phrase since the desktop app appears to just be the “web vault” that has escaped the confines of a browser. 
+
+Bitwarden themselves appear to be dedicated to security even going so far as to undergo a third-party audit yearly and disclosing the findings publicly. This started with a code audit in 2018 and then penetration tests following that (with a gap in 2019 where no audit was conducted). The only flaw mentioned in the code audit directly relating to the desktop application is a potential RCE vulnerability stemming from a *shell.openExternal* call that was mitigated in 2018. However, this yearly pen-test audit (post 2018) also seems to lack a reference to the desktop application with the scope of the audit being “Bitwarden product website, web vault application, and backend server systems.”
+
+Bitwarden’s security bug reporting appears to take place mostly on private channels. Security flaws appear to be taken private on GitHub if they actually require addressing. Bitwarden hosts a bug bounty program on hackerone.com, and their response statistics are very good to the 38 reports they’ve recieved. Reports are vetted within an average of six hours and a patch released within a month. Their bug bounty program offers no rewards other than a “Thanks” at this time.
+
 
 ## Repo Link
 
