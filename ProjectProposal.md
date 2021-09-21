@@ -11,7 +11,7 @@ For our selected hypothetical environment, we will consider a small IT organizat
 
 ### Systems Engineering Diagram
 
-![](Engineering%20View.jpg)
+![](EngineeringView.jpg)
 
 ### Perceived Threats
 
