@@ -67,10 +67,10 @@ The BitWarden Desktop application is a free to use password management software 
 BitWarden Desktop Application documentation reveals a number of open security related configuration and installation issues. Most notably:
 
 * Password change syncronization failures [#1063](https://github.com/bitwarden/desktop/issues/1063)
-* Unlock with fingerprint functional failures [#977]()
-* Passwords not clearing from clipboard history [#915](), [#557]()
-* Password leaks via spellcheck [#842]()
-* Two Factor Authentication loops [#437]()
+* Unlock with fingerprint functional failures [#977](https://github.com/bitwarden/desktop/issues/977)
+* Passwords not clearing from clipboard history [#915](https://github.com/bitwarden/desktop/issues/915), [#557](https://github.com/bitwarden/desktop/issues/557)
+* Password leaks via spellcheck [#842](https://github.com/bitwarden/desktop/issues/842)
+* Two Factor Authentication loops [#437](https://github.com/bitwarden/desktop/issues/437)
 
 
 ### Reflection
