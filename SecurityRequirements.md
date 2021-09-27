@@ -17,10 +17,6 @@ Project Wiki - [wiki](https://github.com/DoctorEww/software-assurance/wiki)
 * [Send Text](https://github.com/DoctorEww/software-assurance/blob/main/usecase/send_text/SendText_V2.drawio.jpg)
 * [Add Member](https://github.com/DoctorEww/software-assurance/blob/main/usecase/add_member_org/AddMemberV3.jpg)
 
-### Alignment Analysis
+### Findings Summary
 
-* []()
-* []()
-* []()
-* []()
-* []()
+### Reflection
