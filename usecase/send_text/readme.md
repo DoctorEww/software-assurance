@@ -1,5 +1,7 @@
 ## Use Case: Send a Text Message
 
+[Back to Security Requirements](https://github.com/DoctorEww/software-assurance/blob/main/SecurityRequirements.md)
+
 ### Description:
 While using BitWarden, each user has the opportunity to send secure messages to other BitWarden users. As an essential function within the BitWarden desktop application, a full analysis of the security requirements when sending texts will help secure the overall program.
 
