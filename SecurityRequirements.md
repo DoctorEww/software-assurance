@@ -98,3 +98,7 @@ Though the amount of work needed to effectively complete this assignment was sig
 
 After carrying out this exercise, our team can confidently state that each member effectively met their objectives, good, corrective feedback occurred regularly, the strengths of each team member helped the team as a whole to reach the objectives required by this project, and the overall progress of the work was steady, high quality, and productive.
 
+### Teamwork
+
+To view our project flow, please find our Security Requirements [here](https://github.com/DoctorEww/software-assurance/projects/4).
+
