@@ -47,6 +47,10 @@ Team’s Recommended Mitigation: Enforce Whitelists
 
 Bitwarden’s Implemented Mitigation: This process goes along the same lines of the input validation and sanitation.  Bitwarden does not deal with the actual text sent in a send, it just deals with the encryption of said text.
 
+#### Summary of Findings
+
+Bitwarden does a great job of ensuring that the sender of the send request has a file that is properly encrypted using AES-256.  Bitwarden does not appear to worry so much about the contents of the file, they do however provide additional means to provide protection for the send file/text.  These include automated expirations on the file as well as an additional password that could be added to the transmission.  The password is not encrypted in anyway, it is just a means to provide additional authentication prior to the file being decrypted on the reciever's end.
+
 
 ### Diagram:
 ![](https://github.com/DoctorEww/software-assurance/blob/main/usecase/send_text/SendText_V2.drawio.jpg)
