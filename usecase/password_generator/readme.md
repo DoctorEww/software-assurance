@@ -26,7 +26,8 @@ II. Security features currently implemented in the BitWarden Desktop Application
   * Input Type: password
 
 * *Input Sanitization* is accomplished in the [passwordGeneartion](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/passwordGeneration.service.ts#L157) class through the removal of characters based on specific input parameters like: minimum lowercase and uppercase characters, minimum numbers, and the allowance and minimum number of special characters.
-* Code verification is currently [implemented](https://github.com/bitwarden/desktop/blob/master/CONTRIBUTING.md) utilizing new feature requests, push requests, code review, and approval by the community. Code signing is accomplished using the [sign](https://github.com/bitwarden/desktop/blob/c99a543030148ff7d0647007971ca4271730f46f/sign.js) JavaScript class.
+* *Code verification* is currently [implemented](https://github.com/bitwarden/desktop/blob/master/CONTRIBUTING.md) by utilizing new feature requests, push requests, code review, and approval by the community. 
+* *Code signing* is accomplished using the [sign](https://github.com/bitwarden/desktop/blob/c99a543030148ff7d0647007971ca4271730f46f/sign.js) JavaScript class.
 
 ### Diagram
 ![](https://github.com/DoctorEww/software-assurance/blob/main/usecase/password_generator/Password_V4.jpg)
