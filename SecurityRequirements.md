@@ -43,7 +43,11 @@ The only potential weaknesses within the password generation functionality of th
 
 **3.4 - Send Text**
 
-Send Text summary here
+The required security components within the Send Text use case include: (1) enforcing code signing, (2) set security features, (3) encrypt communications, (4) use a strong encryption, (5) require input validation and sanitization, and (6) enforce whitelists.  The enforcement of code signing would *mitigate* the chance of security features being disabled and if the security features are enabled, the possibility of stealing the URL would be *mitigated*.  Using a strong encryption algorithm would *mitigate* any exploits of weak encryption algorithms, and by making sure all communicaiton across the network is encrypted, the sender can ensure that any network eavesdropping is *mitigated*.  Contained within the send text operation, a sender has several free text blocks that should require input validation and an enforced whitelist in order to *mitigate* any malicious input or attempts to escape input validation.
+
+As it pertains to the request to Send Text, the BitWarden Desktop application addresses the security issues through (1) enforcement of code signing by using sign.js class as well as (2)(3)(4) the use and implementation of AES-256 which is adequately secure.  
+
+When looking at potential weaknesses we discovered that due to the nature of what BitWarden was designed to do, they do not provide much effort in (5)(6) conducting whitelists and input validation and sanitization on the actual message portion of the send text.
 
 **3.5 - Add Member to Group**
 
