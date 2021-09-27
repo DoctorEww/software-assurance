@@ -9,7 +9,7 @@ While using BitWarden, each user has the opportunity to send secure messages to 
 
 Team’s Recommended Mitigation: Enforce Code Signing
 
-Bitwarden’s Implemented Mitigation: Every sent item uses a new 128-bit secret key and a 512-bit encryption key is derived from that secret key.  The derived key is then used to encrypt the sent file using AES-256 including the file/text data and metadata.
+Bitwarden’s Implemented Mitigation: the code signing is done using the sign JavaScript class.
 
 #### Steal URL:
 
@@ -21,7 +21,7 @@ Bitwarden’s Implemented Mitigation: The URL that is sent is encrypted using AE
 
 Team’s Recommended Mitigation: Encrypt Communications
 
-Bitwarden’s Implemented Mitigation: Bitwarden uses end to end encryption and each sent file is encrypted using AES-256.  
+Bitwarden’s Implemented Mitigation: Every sent item uses a new 128-bit secret key and a 512-bit encryption key is derived from that secret key.  The derived key is then used to encrypt the sent file using AES-256 including the file/text data and metadata.  
 1.	The web browser requests a Send access page from Bitwarden servers.
 2.	Bitwarden servers return the Send access page as a Web Vault client.
 3.	The Web Vault client locally parses the URL fragment containing the Send ID and encryption key.
@@ -53,4 +53,4 @@ Bitwarden does a great job of ensuring that the sender of the send request has a
 
 
 ### Diagram:
-![](https://github.com/DoctorEww/software-assurance/blob/main/usecase/send_text/SendText_V2.drawio.jpg)
+![](https://github.com/DoctorEww/software-assurance/blob/main/usecase/send_text/SendTextV4.JPG)
