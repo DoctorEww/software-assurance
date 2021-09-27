@@ -64,6 +64,15 @@ Add member summary here
 
 The BitWarden Desktop application is a free to use password management software that allows for the secure storage of credit cards, logins, messages and other senistive security objects. As such, the primary difficulties associated with the password manager lie in the syncronization and security of passwords and authentication.
 
+BitWarden Desktop Application documentation reveals a number of open security related configuration and installation issues. Most notably:
+
+* Password change syncronization failures #1063
+* Unlock with fingerprint functional failures #977
+* Passwords not clearing from clipboard history #915, #557
+* Password leaks via spellcheck #842
+* Two Factor Authentication loops #437
+
+
 ### Reflection
 
 While the timeline for this assignment was laborious, the team worked well together in arranging meetings, dividing up tasks, and working together to flesh out ideas. In the initial phases, as we planned out speculated duties and requirements, we chose to develop use cases separately then merge them together and refine each case. As the project progressed, however, we discovered that working individually in this portion of the assignment was less effective. Upon this realization, we pivoted to a more unified approach to developing use and misuse case diagrams and split up for the documentation tasks later on.
