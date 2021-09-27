@@ -13,7 +13,7 @@ I. The security requirements derived through the use/misuse case diagramming pro
 * *Enforcing Code Signing* - In order to ensure the use of established password complexity functions, enforced code signing will ensure that malicious code does not bypass security features.
 
 II. Security features currently implemented in the BitWarden Desktop Application in regards to the requirements above:
-* *[End to End AES 256](https://github.com/bitwarden/desktop/blob/64da326be359d6e4b878ad2647e2eedbbb2cf01d/stores/chocolatey/bitwarden.nuspec)* - AES-256 bit encryption, salted hashing and PDKDF2 SHA-256 are utilized to seal data within the BitWarden Desktop Application.
+* *[End to End AES 256](https://github.com/bitwarden/desktop/blob/64da326be359d6e4b878ad2647e2eedbbb2cf01d/stores/chocolatey/bitwarden.nuspec)* - Credentials and data are encrypted using AES 256 in CBC alongside keys generated from salted PBKDF2 SHA256 hashes.
 * *[zxcvbn Password Checking](https://github.com/dropbox/zxcvbn)* - Zxcvbn is a low-cost password checking library that, through pattern matching and complexity calculations, allows for the streamlined estimation of password strength.
 * *[EFFOrg Open Wireless Random Number Generator](https://github.com/EFForg/OpenWireless/blob/master/app/js/diceware.js)* - BitWarden implements the OpenWireless random number generation process originally used by the Electronic Frontier Foundation in their open-source wireless router development project.
 * *Password complexity* **and** *on-screen anonymity* is ensured through the Password Complexity functions within the [passwordGeneration](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/passwordGeneration.service.ts#L157) JavaScript class.
