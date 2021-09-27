@@ -14,7 +14,7 @@ I. The security requirements derived through the use/misuse case diagramming pro
 
 II. Security features currently implemented in the BitWarden Desktop Application in regards to the requirements above:
 * *[End to End AES 256](https://github.com/bitwarden/desktop/blob/64da326be359d6e4b878ad2647e2eedbbb2cf01d/stores/chocolatey/bitwarden.nuspec)* - To encrypt credentials and data within Bitwarden Desktop, AES 256 in CBC mode is used with keys generated from salted PBKDF2_SHA256 hashes.
-* *[TLS v1.2+ required(https://bitwarden.com/images/resources/bitwarden-network-security-assessment-report-2021.pdf)]* Bitwarden requires TLS 1.2 or 1.3 across their whole domain as of June 2021. This is set up through their service provider Cloudflare.
+* *[TLS v1.2+ required](https://bitwarden.com/images/resources/bitwarden-network-security-assessment-report-2021.pdf)* - Bitwarden requires TLS 1.2 or 1.3 across their whole domain as of June 2021. This is set up through their service provider Cloudflare.
 * *[Vault Encryption Option](https://bitwarden.com/help/article/encrypted-export/)* - User has the option of exporting encrypted vaults in JSON format. Credentials are AES-256 encrypted using the account masterkey similar to how they are stored in the Desktop application’s files. This is not the default selection.
 
 III. Observations:
