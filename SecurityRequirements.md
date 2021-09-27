@@ -25,7 +25,14 @@ The findings of each use case are included below.
 
 **3.1 - Login to Account**
 
-Login summary here
+The required security components within the password generator use case include: (1) account verification, (2) send password hint, (3) sync local database, (4) receive user input, and (5) logout. Strong encryption *mitigates* the exploitation of two-factor authentication, sending a password hint, and syncing the local database. Good password hashing *mitigates* the impact of database theft. Input validation and sanitation *prevents* code injection. 
+
+
+The BitWarden Desktop application currently provides the following features in *direct reference* to the above stated security requirements: (1)(2)(3) AES-256 encryption, salted hashing, and PDBDF2 SHA-256 *implements* strong encryption, (4) the application does not use any functions vulnerable to code injection.
+
+After the evaluation of existing features against the developed requirements, we reached the following conclusions: (1)(2)(3) AES-256 and PDBDF2 SHA-256 is adequate encryption for data in transit and password storage, (4) the code does not process user input in a vulnerable way.
+
+The only weakness we were able to identify is if a malicious user accessed password hashes, then they may bruteforce these one at a time.
 
 **3.2 - Export Vault**
 
