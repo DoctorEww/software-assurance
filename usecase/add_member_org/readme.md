@@ -19,7 +19,7 @@ I. After developing and analyzing the use/misuse case diagram, a few key compone
 
 II. Security features currently implemented in the BitWarden Desktop Application in regards to the requirements above:
 
-* When it comes to adding a member, there seems to be a good grasp of input validation, however, the input sanitation seems to be improperly implemented. When submitting an unexpected input such as "<script>alert(1)</script>" or "<script>", the application will throw a few errors and forcibly sign the user out. "\<a>" on the other hand is recognized during the input validation phase and the program prompts the user to enter a valid email.
+* When it comes to adding a member, there seems to be a good grasp of input validation and sanitation via the desktop application, however, the input sanitation seems to be improperly implemented for the web-based "invite member" function. When submitting an unexpected input such as "<script>alert(1)</script>" or "<script>", the application will throw a few errors and forcibly sign the user out. "\<a>" on the other hand is recognized during the input validation phase and the program prompts the user to enter a valid email.
   
 * *[End to End AES 256](https://github.com/bitwarden/desktop/blob/64da326be359d6e4b878ad2647e2eedbbb2cf01d/stores/chocolatey/bitwarden.nuspec)* - Data is encrypted using AES 256 in CBC with keys generated from salted PBKDF2 SHA256 hashes.
 
