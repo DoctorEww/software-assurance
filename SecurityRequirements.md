@@ -1,20 +1,26 @@
 # Security Requirements Report
 Project Wiki - [wiki](https://github.com/DoctorEww/software-assurance/wiki)
 ## Team Nemo
-### Essential Interactions
-* Login to Account
-* Export Vault
-* Use Password Generator
-* Send Text
-* Add Memeber
-### Use Case Diagrams
+### Essential Interactions, Diagrams, and Alignment Analysis
 
-Use case diagrams will be placed here.
+* [Login to Account](https://github.com/DoctorEww/software-assurance/blob/main/usecase/login/readme.md)
+* [Export Vault](https://github.com/DoctorEww/software-assurance/blob/main/usecase/export_vault/readme.md)
+* [Use Password Generator](https://github.com/DoctorEww/software-assurance/blob/main/usecase/password_generator/readme.md)
+* [Send Text](https://github.com/DoctorEww/software-assurance/blob/main/usecase/send_text/readme.md)
+* [Add Memeber](https://github.com/DoctorEww/software-assurance/blob/main/usecase/add_member_org/readme.md)
 
-### Security Requirements - Misuse Cases
+### Use/Misuse Case Diagrams
 
-Misuse Cases and the resulting use cases will be documented here.
+* [Login to Account](https://github.com/DoctorEww/software-assurance/blob/main/usecase/login/login_use_case_V3.jpg)
+* [Export Vault](https://github.com/DoctorEww/software-assurance/blob/main/usecase/export_vault/VaultExportV3.jpg)
+* [Use Password Generator](https://raw.githubusercontent.com/DoctorEww/software-assurance/main/usecase/password_generator/Password_V4.jpg)
+* [Send Text](https://github.com/DoctorEww/software-assurance/blob/main/usecase/send_text/SendText_V2.drawio.jpg)
+* [Add Member](https://github.com/DoctorEww/software-assurance/blob/main/usecase/add_member_org/AddMemberV3.jpg)
 
-### Assessment
+### Alignment Analysis
 
-An overall assessment of the security requirements and how well the existing security features meet these requirements will be placed here.
+* []()
+* []()
+* []()
+* []()
+* []()
