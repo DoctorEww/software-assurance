@@ -100,5 +100,5 @@ After carrying out this exercise, our team can confidently state that each membe
 
 ### Teamwork
 
-To view our project flow, please find our Security Requirements [here](https://github.com/DoctorEww/software-assurance/projects/4).
+To view our project flow, please find our Security Requirements Project [here](https://github.com/DoctorEww/software-assurance/projects/4).
 
