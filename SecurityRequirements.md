@@ -62,7 +62,7 @@ Add member summary here
 
 ### OSS Project Documentation Review
 
-Review OSS project documentation for security-related configuration and installation issues. Summarize your observations.
+The BitWarden Desktop application is a free to use password management software that allows for the secure storage of credit cards, logins, messages and other senistive security objects. As such, the primary difficulties associated with the password manager lie in the syncronization and security of passwords and authentication.
 
 ### Reflection
 
