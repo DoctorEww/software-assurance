@@ -67,9 +67,9 @@ The required security components within the Send Text use case include: (1) inpu
 
 The BitWarden Desktop application currently provides the following features in *direct reference* to the above stated security requirements: (1) input santization and validation are *implemented* via the web application backend and (2) encrypted communications are *implemented* via end-to-end AES-256 encryption using salted PBKDF2 SHA256 hashes.
 
-After the evaluation of existing features against the developed requirements, we reached the following conclusions: 
+After the evaluation of existing features against the developed requirements, we reached the following conclusions: (1) the add member functionlity is predominantlyy moderated by the web backend, not the local desktop applciation, and (2) the input validation, sanitization, and encryption are adequate for secured communications.
 
-The only potential weaknesses within the 
+The only potential weaknesses within the Add member use case lie in the somewhat convoluted operational flow and the use of an out of band fingerprint phrase for authentication.
 
 ### OSS Project Documentation Review
 
