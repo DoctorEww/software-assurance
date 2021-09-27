@@ -41,7 +41,7 @@ Bitwarden’s Implemented Mitigation: Bitwarden uses AES-256 encryption
 
 Team’s Recommended Mitigation: Input Validation and Sanitation
 
-Bitwarden’s Implemented Mitigation: The entirety of the send request is encrypted and stored on Bitwarden servers.  Bitwarden takes the responsibility of encrypting the sent text, however does very little in terms of validating the text as it become encrypted as soon as it is sent and does not get decrypted until it reaches the recipient.
+Bitwarden’s Implemented Mitigation: The entirety of the send request is encrypted and stored on Bitwarden servers.  Bitwarden takes the responsibility of encrypting the sent text, however does very little in terms of validating the text as it became encrypted as soon as it is sent and does not get decrypted until it reaches the recipient.
 
 #### Escape Input Validation:
 
@@ -51,7 +51,7 @@ Bitwarden’s Implemented Mitigation: This process goes along the same lines of 
 
 #### Summary of Findings
 
-Bitwarden does a great job of ensuring that the sender of the send request has a file that is properly encrypted using AES-256.  Bitwarden does not appear to worry so much about the contents of the file, they do however provide additional means to provide protection for the send file/text.  These include automated expirations on the file as well as an additional password that could be added to the transmission.  The password is not encrypted in anyway, it is just a means to provide additional authentication prior to the file being decrypted on the reciever's end.
+Bitwarden does a great job of ensuring that the sender of the send request has a file that is properly encrypted using AES-256.  Bitwarden does not appear to worry so much about the contents of the file, they do however provide additional means to provide protection for the sent file/text.  These include automated expirations on the file as well as an additional password that could be added to the transmission.  The password is not encrypted in any way, it is just a means to provide additional authentication prior to the file being decrypted on the receiver's end.
 
 
 ### Diagram:
