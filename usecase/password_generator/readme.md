@@ -1,5 +1,7 @@
 ## Use Case: Use Password Generator
 
+[Back to Security Requirements](https://github.com/DoctorEww/software-assurance/blob/main/SecurityRequirements.md)
+
 ### Description:
 BitWarden provides a password generator for the dynamic generation of passwords. The generator offers multiple modifiable security parameters to strengthen or weaken the generated password.
 
