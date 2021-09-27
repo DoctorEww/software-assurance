@@ -55,4 +55,4 @@ Bitwarden does a great job of ensuring that the sender of the send request has a
 
 
 ### Diagram:
-![](https://github.com/DoctorEww/software-assurance/blob/main/usecase/send_text/SendTextV4x2.JPG)
+![](https://github.com/DoctorEww/software-assurance/blob/main/usecase/send_text/SendText_V4x2.jpg)
