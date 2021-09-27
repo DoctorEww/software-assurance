@@ -2,11 +2,11 @@
 Project Wiki - [wiki](https://github.com/DoctorEww/software-assurance/wiki)
 ## Team Nemo
 ### Essential Interactions
-* First
-* Second
-* Third
-* Fourth
-* Fifth
+* Login to Account
+* Export Vault
+* Use Password Generator
+* Send Text
+* Add Memeber
 ### Use Case Diagrams
 
 Use case diagrams will be placed here.
