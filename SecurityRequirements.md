@@ -1,5 +1,5 @@
 # Security Requirements Report
-Project Wiki - [wiki](https://github.com/DoctorEww/software-assurance/wiki)
+Project [Wiki](https://github.com/DoctorEww/software-assurance/wiki)
 ## Team Nemo
 ### Essential Interactions, Diagrams, and Alignment Analysis
 
