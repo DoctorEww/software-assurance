@@ -77,9 +77,8 @@ BitWarden Desktop Application documentation per the GitHub Repository reveals a 
 In addition to the above stated issues, in our survey fo the sfotware we also discovered:
 
 * Send text fails to use the password specified to encrypt the data. This is described [here](https://bitwarden.com/help/article/send-encryption/).
-* The Export Vault function defaults to the insecure .csv option. This is describeed [here]().
+* The Export Vault function defaults to the insecure .csv option. This is describeed [here](https://bitwarden.com/help/article/encrypted-export/).
 * [BitWarden](https://bitwarden.com/help/article/what-encryption-is-used/) inaccurately depics master passsword security in the following, "Even if Bitwarden were to be hacked, there would be no method by which your master password could be obtained." The password can be recovered through a brute force attack. This is no substitue for a complex password.
-
 
 ### Reflection
 
