@@ -35,13 +35,13 @@ The only weakness we were able to identify is if a malicious user accessed passw
 
 **3.2 - [Export Vault](https://github.com/DoctorEww/software-assurance/blob/main/usecase/export_vault/readme.md)**
 
-The required security components within the password generator use case include: (1) SSL/TLS Restrictions, (2) Transport Layer Security, (3) Credential Hashing, (4) Vault Encryption, and (5) Strong Cryptography. SSL/TLS restrictions *mitigate* TLS downgrade attacks. Transport Layer Security *mitigates* network eavesdropping. Credential hashing *mitigates* brute force attacks. Finally, vault encryption via strong cryptography *mitigates* the exploitation of weak cryptographic methods, 
+The required security components within the password generator use case include: (1) SSL/TLS Restrictions, (2) Transport Layer Security, (3) Credential Hashing, (4) Vault Encryption, and (5) Strong Cryptography. SSL/TLS restrictions mitigate TLS downgrade attacks. Transport Layer Security mitigates network eavesdropping. Credential hashing mitigates brute force attacks. Finally, vault encryption via strong cryptography mitigates the exploitation of weak cryptographic methods,
 
-The BitWarden Desktop application currently provides the following features in direct reference to the above stated security requirements: (1) the requirement of TLS v1.2+ *implements* SSL/TLS restrictions and transport layer security, and (2) End-to-end AES-256 in CBC mode in concert with keys generated from salted PBKDF2_SHA256 hashes *implements* credential hashing, vault encryption, and strong cryptography. 
+The BitWarden Desktop application currently provides the following features in direct reference to the above stated security requirements: (1) the requirement of TLS v1.2+ implements SSL/TLS restrictions and transport layer security, and (2) End-to-end AES-256 in CBC mode in concert with keys generated from salted PBKDF2_SHA256 hashes implements credential hashing, vault encryption, and strong cryptography.
 
-After the evaluation of existing features against the developed requirements, we reached the following conclusions: (1) AES-256 and PDBDF2 SHA-256 is adequate encryption for credential hashing and encryption, and (2) TLS security provides adequate protection for network eavesdropping and TLS downgrade attacks, 
+After the evaluation of existing features against the developed requirements, we reached the following conclusions: (1) AES-256 and PDBDF2 SHA-256 is adequate encryption for credential hashing and encryption, and (2) TLS security provides adequate protection for network eavesdropping and TLS downgrade attacks,
 
-The primary weakness discovred in the implmentation of this fucntion lies in the fact that the default encryption option when exporting the vault is either an unencrypted CSV or JSON file.
+The primary weakness discovered in the implementation of this function lies in the fact that the default encryption option when exporting the vault is either an unencrypted CSV or JSON file.
 
 **3.3 - [Use Password Generator](https://github.com/DoctorEww/software-assurance/blob/main/usecase/password_generator/readme.md)**
 
