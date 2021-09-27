@@ -23,7 +23,7 @@ In working through the above stated use/misuse case scenarios, we quickly recogn
 
 The findings of each use case are included below.
 
-**3.1 - Login to Account**
+**3.1 - [Login to Account](https://github.com/DoctorEww/software-assurance/blob/main/usecase/login/readme.md)**
 
 The required security components within the password generator use case include: (1) account verification, (2) send password hint, (3) sync local database, (4) receive user input, and (5) logout. Strong encryption *mitigates* the exploitation of two-factor authentication, sending a password hint, and syncing the local database. Good password hashing *mitigates* the impact of database theft. Input validation and sanitation *prevents* code injection. 
 
@@ -34,11 +34,11 @@ After the evaluation of existing features against the developed requirements, we
 
 The only weakness we were able to identify is if a malicious user accessed password hashes, then they may bruteforce these one at a time.
 
-**3.2 - Export Vault**
+**3.2 - [Export Vault](https://github.com/DoctorEww/software-assurance/blob/main/usecase/export_vault/readme.md)**
 
 Export summary here
 
-**3.3 - Use Password Generator**
+**3.3 - [Use Password Generator](https://github.com/DoctorEww/software-assurance/blob/main/usecase/password_generator/readme.md)**
 
 The required security components within the password generator use case include: (1) use strong encryption, (2) use strong random number generator, (3) choose password complexity, (4) star out visible password, and (5) enforce code signing. Strong encryption *mitigates* the exploitation of weak crypto and the accessing previously generated password strings. The use of a strong random number generator *mitigates* standard attacks on weak random number generations that allow an attacker to predict the next generated strings. Choosing password complexity *mitigates* easy to guess strings, while allowing strength to be either increased or decreased based on user discretion. Starring out visible strings *mitigates* screen capture attacks. Finally, the enforcement of code signing *mitigate*s the injection of that malicious code into the software that can bypass security features. 
 
@@ -48,7 +48,7 @@ After the evaluation of existing features against the developed requirements, we
 
 The only potential weaknesses within the password generation functionality of the BitWarden Desktop Application lie in the potential weakness of the random number generator and the minimal requirements in the default password constraints.
 
-**3.4 - Send Text**
+**3.4 - [Send Text](https://github.com/DoctorEww/software-assurance/blob/main/usecase/send_text/readme.md)**
 
 The required security components within the Send Text use case include: (1) enforcing code signing, (2) set security features, (3) encrypt communications, (4) use a strong encryption, (5) require input validation and sanitization, and (6) enforce whitelists.  The enforcement of code signing would *mitigate* the chance of security features being disabled and if the security features are enabled, the possibility of stealing the URL would be *mitigated*.  Using a strong encryption algorithm would *mitigate* any exploits of weak encryption algorithms, and by making sure all communicaiton across the network is encrypted, the sender can ensure that any network eavesdropping is *mitigated*.  Contained within the send text operation, a sender has several free text blocks that should require input validation and an enforced whitelist in order to *mitigate* any malicious input or attempts to escape input validation.
 
@@ -56,7 +56,7 @@ As it pertains to the request to Send Text, the BitWarden Desktop application ad
 
 When looking at potential weaknesses we discovered that due to the nature of what BitWarden was designed to do, they do not provide much effort in (5)(6) conducting whitelists and input validation and sanitization on the actual message portion of the send text.
 
-**3.5 - Add Member to Group**
+**3.5 - [Add Member](https://github.com/DoctorEww/software-assurance/blob/main/usecase/add_member_org/readme.md)**
 
 Add member summary here
 
