@@ -19,4 +19,5 @@ Project Wiki - [wiki](https://github.com/DoctorEww/software-assurance/wiki)
 
 ### Findings Summary
 
+
 ### Reflection
