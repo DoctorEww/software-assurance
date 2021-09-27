@@ -1,5 +1,7 @@
 ## Use Case: Add a Member to Group
 
+[Back to Security Requirements](https://github.com/DoctorEww/software-assurance/blob/main/SecurityRequirements.md)
+
 ### Description:
 BitWarden allows the creation and modification of user level groups for the sharing of accounts, logins, messages, and other secure features. To expand a group, privileged users must add other BitWarden members. To ensure the security of the BitWarden group accounts, the security requirements for the group functionality must be considered.
 
