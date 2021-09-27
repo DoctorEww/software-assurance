@@ -63,11 +63,13 @@ When looking at potential weaknesses we discovered that due to the nature of wha
 
 **3.5 - [Add Member](https://github.com/DoctorEww/software-assurance/blob/main/usecase/add_member_org/readme.md)**
 
-The required security components within the Add Member use case include: (1) Input Validation, (2) Input Sanitation, (3) Encrypt Communications, and (4) Use Strong Encryption Algorithms. The application has many input fields, especially when adding a user. The use of input validation would *mitigate* the security risks posed by unexpected or unintended input provided by the user. It would need to be further reinforced through the use of input sanitation in order to *prevent* a malicious user from escaping input validation. When working with the initial phase to invite a user by sending the email, it is at this moment that encrypted communications would be required to *mitigate* the risk of a malicious actor eavesdropping on the network. While only mitigating the threat, the use of strong encryption algorithms would be able to *prevent* the exploitation of weak crypto algorithms used when encrypting the communications.
+The required security components within the Send Text use case include: (1) input validation, (2) input sanitization, (3) encrypting communications, and (4) the use of strong encryption. Input validation *mitigates* malicious user input. Input sanitization *mitigates* escaping out of input validation. Encrypting communcations *mitigates* networking eavesdropping attacks. Finally, the use of strong encryption *mitigates* the exploitation of weak cryptographic methods.
 
-As it pertains to the Add Member functionality, the BitWarden Desktop application is quite secure and addresses (1)(2) through performing the adequate procedures. As for (3)(4), it has been noted that BitWarden does provide AES-256 for its encryption which is secure and strong.
+The BitWarden Desktop application currently provides the following features in *direct reference* to the above stated security requirements: (1) input santization and validation are *implemented* via the web application backend and (2) encrypted communications are *implemented* via end-to-end AES-256 encryption using salted PBKDF2 SHA256 hashes.
 
-While much of the functionality for Add Member is web-based, the web-based portion does have a minor issue with input validation. The web-based components are outside the scope for the project.
+After the evaluation of existing features against the developed requirements, we reached the following conclusions: 
+
+The only potential weaknesses within the 
 
 ### OSS Project Documentation Review
 
