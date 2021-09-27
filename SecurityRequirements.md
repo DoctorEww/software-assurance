@@ -55,4 +55,9 @@ Review OSS project documentation for security-related configuration and installa
 
 ### Reflection
 
-Include a reflection of your teamwork for this assignment. What issues occurred? How did you resolve them? What did you plan to change moving forward? 
+While the timeline for this assignment was laborious, the team worked well together in arranging meetings, dividing up tasks, and working together to flesh out ideas. In the initial phases, as we planned out speculated duties and requirements, we chose to develop use cases separately then merge them together and refine each case. As the project progressed, however, we discovered that working individually in this portion of the assignment was less effective. Upon this realization, we pivoted to a more unified approach to developing use and misuse case diagrams and split up for the documentation tasks later on.
+
+Though the amount of work needed to effectively complete this assignment was significant, each member carried out the tasks they were given to the best of their abilities, all the while providing good, high quality of feedback and corrective input to ensure that the team stayed on the correct course moving forward. While there were failures in the initial approach to use case diagramming, the team’s corrective response quickly evened out the course and helped keep the team on track to meet the deadline. 
+
+After carrying out this exercise, our team can confidently state that each member effectively met their objectives, good, corrective feedback occurred regularly, the strengths of each team member helped the team as a whole to reach the objectives required by this project, and the overall progress of the work was steady, high quality, and productive.
+
