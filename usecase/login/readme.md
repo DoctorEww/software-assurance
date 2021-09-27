@@ -22,5 +22,5 @@ These options can be viewed in the codebase [here](https://github.com/bitwarden/
 ### Diagram:
 
 
-![](https://github.com/DoctorEww/software-assurance/blob/main/usecase/login/login_use_case_V4.jpg)
+![](https://github.com/DoctorEww/software-assurance/blob/main/usecase/login/login_use_case_V4x2.jpg)
 
