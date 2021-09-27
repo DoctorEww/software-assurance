@@ -62,15 +62,23 @@ Add member summary here
 
 ### OSS Project Documentation Review
 
-The BitWarden Desktop application is a free to use password management software that allows for the secure storage of credit cards, logins, messages and other senistive security objects. As such, the primary difficulties associated with the password manager lie in the syncronization and security of passwords and authentication.
+The BitWarden Desktop application is a free-to-use password management software that allows for the secure storage of credit cards, logins, messages and other senistive security objects. As such, the primary difficulties associated with the password manager lie in the syncronization and security of passwords and authentication.
 
-BitWarden Desktop Application documentation reveals a number of open security related configuration and installation issues. Most notably:
+BitWarden security policy as stated on the BitWarden [HackerOne profile](https://hackerone.com/bitwarden?type=team) indicates that users should, "provide ... a reasonable amount of time to resolve the issue before any disclosure to the public or a third-party. We may publicly disclose the issue before resolving it, if appropriate." As such, public knowledge of active security and configuration issues is limited in scope to less threatening vulnerabilities. Further, BitWarden operates a private security [issue board](https://hackerone.com/bitwarden?type=team) that keeps a number of security issues out of the public eye.
+
+BitWarden Desktop Application documentation per the GitHub Repository reveals a number of minor security related configuration and installation issues. Most notably:
 
 * Password change syncronization failures [#1063](https://github.com/bitwarden/desktop/issues/1063)
 * Unlock with fingerprint functional failures [#977](https://github.com/bitwarden/desktop/issues/977)
 * Passwords not clearing from clipboard history [#915](https://github.com/bitwarden/desktop/issues/915), [#557](https://github.com/bitwarden/desktop/issues/557)
 * Password leaks via spellcheck [#842](https://github.com/bitwarden/desktop/issues/842)
 * Two Factor Authentication loops [#437](https://github.com/bitwarden/desktop/issues/437)
+
+In addition to the above stated issues, in our survey fo the sfotware we also discovered:
+
+* Send text fails to use the password specified to encrypt the data. This is described [here](https://bitwarden.com/help/article/send-encryption/).
+* The Export Vault function defaults to the insecure .csv option. This is describeed [here]().
+* [BitWarden](https://bitwarden.com/help/article/what-encryption-is-used/) inaccurately depics master passsword security in the following, "Even if Bitwarden were to be hacked, there would be no method by which your master password could be obtained." The password can be recovered through a brute force attack. This is no substitue for a complex password.
 
 
 ### Reflection
