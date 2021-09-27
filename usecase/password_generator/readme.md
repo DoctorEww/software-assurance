@@ -27,4 +27,3 @@ NOTES
 
 ### Diagram:
 ![](https://raw.githubusercontent.com/DoctorEww/software-assurance/main/usecase/password_generator/Password_V4.jpg)
-
