@@ -7,7 +7,7 @@ Project Wiki - [wiki](https://github.com/DoctorEww/software-assurance/wiki)
 * [Export Vault](https://github.com/DoctorEww/software-assurance/blob/main/usecase/export_vault/readme.md)
 * [Use Password Generator](https://github.com/DoctorEww/software-assurance/blob/main/usecase/password_generator/readme.md)
 * [Send Text](https://github.com/DoctorEww/software-assurance/blob/main/usecase/send_text/readme.md)
-* [Add Memeber](https://github.com/DoctorEww/software-assurance/blob/main/usecase/add_member_org/readme.md)
+* [Add Member](https://github.com/DoctorEww/software-assurance/blob/main/usecase/add_member_org/readme.md)
 
 ### Use/Misuse Case Diagrams
 
