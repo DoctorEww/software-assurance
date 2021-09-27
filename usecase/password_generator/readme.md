@@ -19,7 +19,7 @@ Security features currently implemented in the BitWarden Desktop Application in 
 * Password complexity is ensured through the 
 
 NOTES
-* Max passworods in history: 100
+* Max passwords in history: 100
 * Defaults 
   * Length: 14
   * One number required
