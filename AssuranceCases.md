@@ -5,15 +5,10 @@
 
 Claims must be related to high risk critical secuirty properties. Claims cannot be trivial.
 
-* Claim 1 - The user login page
-  * Related to Login to Account
-* Claim 2 - Related to Export Vault
-* Claim 3 - Related to Use Password Generator
-* Claim 4 - Related to Send Text
-* Claim 5 - Related to Add Member
-
-
-The system minimizes informaiton disclosure during communication
-User input does not get excuted Non-repudiation
+* Claim 1 - The system minimizes information disclosure during communication
+* Claim 2 - The system provides reasonable protection from malicious input
+* Claim 3 - The system protects data integrity during transmission
+* Claim 4 - The system mitigates the impact of database theft
+* Claim 5 - The system ensures proper user authentication
 
 ### Reflection
