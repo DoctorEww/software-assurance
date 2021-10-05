@@ -3,8 +3,6 @@
 
 ### Claims and Arguments
 
-Claims must be related to high risk critical secuirty properties. Claims cannot be trivial.
-
 * Claim 1 - The system minimizes information disclosure during communication
 * Claim 2 - The system provides reasonable protection from malicious input
 * Claim 3 - The system protects data integrity during transmission
