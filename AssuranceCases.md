@@ -1,4 +1,5 @@
-# Assurance Cases
+# Assurance Case Report
+
 ## Team Nemo
 
 ### Claims, Arguments, and Assessments
