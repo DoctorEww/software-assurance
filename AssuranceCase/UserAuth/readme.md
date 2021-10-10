@@ -3,3 +3,7 @@
 
 ### Diagram
 ![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/UserAuth/AuthenticationV2.jpg)
+
+### Alignment Assessment
+
+In progress
