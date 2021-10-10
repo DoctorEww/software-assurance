@@ -4,3 +4,7 @@
 
 ### Diagram
 ![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DataIntegrity/DataIntegrityV2.jpg)
+
+### Alignment Assessment
+
+In progress
