@@ -10,7 +10,7 @@
 * Claim 4 - [The system mitigates the impact of database theft](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DatabaseTheft/readme.md)
 * Claim 5 - [The system ensures proper user authentication](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/UserAuth/readme.md)
 
-### Assesment Summary
+### Alignment Assesment Summary
 
 In Progress
 
