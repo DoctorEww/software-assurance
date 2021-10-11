@@ -36,7 +36,7 @@
   
   *Conclusion*: Per assurance claim 4, the BitWarden Desktop Application maintains a high level of alignment with the assurance cases developed during this study.
 
-* **Assurance Cliam 5** - [The system ensures proper user authentication](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/UserAuth/readme.md)
+* **Assurance Claim 5** - [The system ensures proper user authentication](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/UserAuth/readme.md)
 
   *Overview*: The system exhibits a number of characteristics that mitigate doubts concerning user authentication. A moderate password policy is enforced, however, more complexity would increase the strength of passwords significantly. The lack of a a stronger password policy indicates a gap in assurance vs. implementation. The system uses salts, yet only *recommends* salts of over 16 bytes. This recommendation adds another *gap* in assurance. Randomness is achieved through the PRG included in the Node library. As indicated by Node documentation, the salt is only returned when sufficient entropy is achieved, however, details of the process are obscure. The two-factor authentication process meets security requirements with a high level of assurance. Password recovery is disallowed, circumventing recovery attacks and 2FA attacks. Login attempts aren't limited, but Captchas are used to a limited extent. Industry standard encryption SHA256 is utilized in hashing.
   
