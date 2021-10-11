@@ -28,7 +28,7 @@ II. BitWarden currently provides the following evidence per the Assurance Case n
 
   Further, the application uses [Zxcvbn](https://github.com/dropbox/zxcvbn) to measure password strength per the user's input, but also as a means to ensure passwords are effectively hashed to mitigate collisions. 
   
-  There is a gap in the assurance required to reduce doubts per the strength of the password. To meet assurance needs, the password must require special characters outside the 0 and last politions, as well as at least one special, upper, and lower characters.
+  There is a gap in the assurance required to reduce doubts per the strength of the password. To meet assurance needs, the password must require special characters outside the first and last politions, as well as at least one special, upper, and lower characters.
 * E2: *Source Code Review: Salt* - 
 * E3: *Hardware Randomness Library* – The BitWarden Desktop Application pulls bytes from Node's crypto library for salt. Bytes are generated psuedorandomly and it does not mention how or where, only that a entropy requirement must be hit before it will return a value. ![Node claims that the generation is cryptographically strong.](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback)
 * E4: *2FA Policy Review*
