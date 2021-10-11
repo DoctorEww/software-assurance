@@ -1,6 +1,9 @@
+## Assurance Claim 3: The system protects data integrity during transmission
 
-[BACK](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCases.md)
-### Claim 3 - The system protects data integrity during transmission
+[Back to Assurance Cases](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCases.md)
+
+### Description:
+As an application tasked with securing transmissions from both prying eyes and data contamination, the BitWarden Desktop application must reasonably assure the integrity of the data it transmits. More specifically, during password synchronization, any deprecation of the data can cause a number of significant security issues.
 
 ### Diagram
 ![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DataIntegrity/DataIntegrityV2.jpg)
