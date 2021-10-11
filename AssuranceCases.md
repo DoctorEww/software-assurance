@@ -2,7 +2,7 @@
 
 ## Team Nemo
 
-### Claims, Arguments, and Assessments
+### Claims, Arguments, and Detailed Alignment Assessments
 
 * Claim 1 - [The system minimizes information disclosure during communication](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/InfoDisclosure/readme.md)
 * Claim 2 - [The system provides reasonable protection from malicious input](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/MaliciousInput/readme.md)
@@ -12,7 +12,14 @@
 
 ### Alignment Assesment Summary
 
-In Progress
+* Assurance Claim 1 - Assesment
+* Assurance Claim 2 - Assesment
+* Assurance Claim 3 - Assesment
+* Assurance Claim 4 - Assesment
+* Assurance Cliam 5 - [The system ensures proper user authentication](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/UserAuth/readme.md)
+
+  The system exhibits a number of characteristics that mitigate doubts concerning user authentication. A moderate password policy is enforced, however, more complexity would increase the strength of passwords significantly. The system uses salts, yet only *recommends* salts of over 16bytes. Randomness is achieved through the PRG included in the Node library. As indicated by Node documentation, the salt is only returned when sufficient entropy is achieved, however, details of the process are obscure. The two-factor authentication process meets security requirements with a high level of assurance. Password recovery is disallowed, circumventing recovery attacks and 2FA attacks. Login attempts aren't limited, but Captchas are used to a limited extent. Industry standard encryption SHA256 is utilized in hashing.
+
 
 ### Reflection
 
