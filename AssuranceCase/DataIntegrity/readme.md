@@ -7,6 +7,8 @@ As an application tasked with securing transmissions from both prying eyes and d
 
 ### Alignment Assessment
 
+BitWarden currently provides the following evidences per the Assurance Case needs E1-E6 in the diagram below:
+
 - **E1**: A review of the source code to verify that all send requests have a default time setting that will automatically delete the sent message after a predetermined amount of time as well as purging the data from the database once the set time or default time has occured.
 
 - **E2**: The crypto service used by the bitwarden app is abstracted in their js-lib. The only form of symmetric encryption declared for use within the app (and the bitwarden library as a whole) is AES (![lines 17-21](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/common/src/abstractions/cryptoFunction.service.ts)). Furthermore, when these funtions are brought out of abstract in the library the aesEncrypt function is hard coded into AES-256-CBC (![line 114](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/node/src/services/nodeCryptoFunction.service.ts#L114)).
