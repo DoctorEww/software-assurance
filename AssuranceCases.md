@@ -49,3 +49,7 @@ We started this assignment off, in contrast to the last one, by working on the a
 Working though the diagram portions of the assignment, we worked to create starting points individually before meeting with others to complete the rest of the diagram. This allowed us to work through the diagrams together while we tossed ideas amongst each other. Comparing diagrams on their first draft, the assurance case diagrams were much cleaner and comprehensive than the security requirements diagrams. One of the main challenges during the design of these diagrams was availability. While we wanted to work on the diagrams all together or in small groups, our varying schedules occasionally caused problems, much like previous assignments. However, the team has been extraordinary about preventing a challenge such as this from affecting the quality of our work. Where we could not meet as full groups, smaller groups were formed instead to complete the work that was distributed. Our assurance case diagrams were then further fine tuned when we could best accomodate everyone's schedule to ensure each diagram was reviewed and any errors were resolved.
 
 Every member of the team continues to put in their best effort and looks forward to tackling the next assignment. All objectives were completed effectively and in good quality.
+
+### Teamwork
+
+To view our project flow, please find our Security Requirements Project [here](https://github.com/DoctorEww/software-assurance/projects/5).
