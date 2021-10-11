@@ -32,9 +32,9 @@
 
 * **Assurance Claim 4** - [The system mitigates the impact of database theft](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DatabaseTheft/readme.md)
 
-  *Overview*: The password database creates the kernel around which the BitWarden Desktop Application is wrapped. Due to the critical nature of the password database, assurances must be created so as to reduce the doubts about the security of the database. The system takes a number of steps to mitigate the impact of database theft. All communications to and from the database is encrypted via AES 256. Salt is generated via the Node PRG (See above concerns). The PKDBF2 SHA 256 key stretching algorithm ensures secure key expansion. 
+  *Overview*: The password database creates the kernel around which the BitWarden Desktop Application is wrapped. Due to the critical nature of the password database, assurances must be created so as to reduce the doubts about the security of the database. The system takes a number of steps to mitigate the impact of database theft. All communications to and from the database is encrypted via AES 256. Salt is generated via the Node PRG (See above concerns). Again, the lack of sufficient salt enforcement adds a slight *gap* in assurance vs. implementation. The PKDBF2 SHA 256 key stretching algorithm ensures secure key expansion. Finally, the system uses computationally challenging hashing.
   
-  *Conclusion*: Per assurance claim 4, the BitWarden Desktop Application maintains a high level of alignment with the assurance cases developed during this study.
+  *Conclusion*: Per assurance claim 4, the BitWarden Desktop Application maintains a high level of alignment with the assurance cases developed during this study with one (1) minor noted *gap*.
 
 * **Assurance Claim 5** - [The system ensures proper user authentication](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/UserAuth/readme.md)
 
