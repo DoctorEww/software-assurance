@@ -30,4 +30,4 @@ II. BitWarden currently provides the following evidence per the Assurance Case n
 
 ### Diagram
 
-![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/UserAuth/AuthenticationV2.jpg)
+![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/UserAuth/AuthenticationV3.jpg)
