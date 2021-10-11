@@ -2,6 +2,12 @@
 
 [Back to Assurance Cases](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCases.md)
 
+### Description:
+
+The primary functionality of the BitWarden Desktop Application derives itself from a simple password storage data base. This database is not only essential to the security of user data, but also to the entirety of the Desktop Application. In order to indicate reasonable assurance, doubts concerning the impact of database theft must be addressed and mitigated.
+
+Before utilizing any of the password management or messaging functionality of the BitWarden Desktop application, each user must authenticate themselves to the system. Due to the critical nature of this security requirement, assurance is needed to mitigate doubts about authentication functionality in the application. 
+
 ### Alignment Assessment
 
 BitWarden currently provides the following evidences per the Assurance Case needs E1-E6 in the diagram below:
