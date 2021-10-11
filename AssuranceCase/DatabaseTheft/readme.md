@@ -12,13 +12,13 @@ Before utilizing any of the password management or messaging functionality of th
 
 BitWarden currently provides the following evidences per the Assurance Case needs E1-E6 in the diagram below:
 
-- **E1**: The crypto service used by the bitwarden app is abstracted in their js-lib. The only form of symmetric encryption declared for use within the app (and the bitwarden library as a whole) is AES ([lines 17-21](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/common/src/abstractions/cryptoFunction.service.ts)). Furthermore, when these funtions are brought out of abstract in the library the aesEncrypt function is hard coded into AES-256-CBC (![line 114](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/node/src/services/nodeCryptoFunction.service.ts#L114)).
+- **E1**: The crypto service used by the bitwarden app is abstracted in their js-lib. The only form of symmetric encryption declared for use within the app (and the bitwarden library as a whole) is AES ([lines 17-21](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/common/src/abstractions/cryptoFunction.service.ts)). Furthermore, when these funtions are brought out of abstract in the library the aesEncrypt function is hard coded into AES-256-CBC ([line 114](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/node/src/services/nodeCryptoFunction.service.ts#L114)).
 
-- **E2**: Bitwarden pulls bytes from Node's crypto library for salt. Bytes are generated psuedorandomly and it does not mention how or where, only that a entropy requirement must be hit before it will return a value. ![Node claims that the generation is cryptographically strong.](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback)
+- **E2**: Bitwarden pulls bytes from Node's crypto library for salt. Bytes are generated psuedorandomly and it does not mention how or where, only that a entropy requirement must be hit before it will return a value. [Node claims that the generation is cryptographically strong.](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback)
 
 - **E3**: A review of the source code to ensure the salt length is greater than 32 bytes.
 
-- **E4**: PKDBF2_SHA256 is the RFC-8018 algoritm used in Bitwarden. ![Bitwarden has it set to run a minimum of 5000 cycles.](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/common/src/services/crypto.service.ts#L432)
+- **E4**: PKDBF2_SHA256 is the RFC-8018 algoritm used in Bitwarden. [Bitwarden has it set to run a minimum of 5000 cycles.](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/common/src/services/crypto.service.ts#L432)
 
 - **E5**: A review of the source code to ensure 100,000 rounds are completed within the function performing the hashing algorithm.
 
