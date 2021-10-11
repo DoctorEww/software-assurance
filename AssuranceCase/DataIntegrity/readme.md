@@ -5,9 +5,6 @@
 ### Description:
 As an application tasked with securing transmissions from both prying eyes and data contamination, the BitWarden Desktop application must reasonably assure the integrity of the data it transmits. More specifically, during password synchronization, any deprecation of the data can cause a number of significant security issues.
 
-### Diagram
-![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DataIntegrity/DataIntegrityV2.jpg)
-
 ### Alignment Assessment
 
 - **E1**: A review of the source code to verify that all send requests have a default time setting that will automatically delete the sent message after a predetermined amount of time as well as purging the data from the database once the set time or default time has occured.
@@ -21,3 +18,7 @@ As an application tasked with securing transmissions from both prying eyes and d
 - **E5**: PKDBF2_SHA256 is the RFC-8018 algoritm used in Bitwarden. ![Bitwarden has it set to run a minimum of 5000 cycles.](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/common/src/services/crypto.service.ts#L432)
 
 - **E6**: A review of the source code to verify that password input hides the password as user is typing it in and allows for the user to toggle the visibility of the password.  As of this time, Bitwarden does not implement this type of security and only hides the sender's email address when the recipient opens the send request and it is protected with a password. 
+
+### Diagram
+![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DataIntegrity/DataIntegrityV2.jpg)
+
