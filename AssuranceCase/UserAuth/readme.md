@@ -20,7 +20,7 @@ I. To reasonably assure software security per the Assurance case above, the supp
 
 II. BitWarden currently provides the following evidence per the Assurance Case needs above:
 
-* E1: *Password Policy Review*
+* E1: *Password Policy Review* - The [Zxcvbn](https://github.com/dropbox/zxcvbn) password strength estimator is utilized to evaluate each password for strength. The score is then used to determine the acceptability of the password.
 * E2: *Source Code Review: Salt*
 * E3: *Hardware Randomness Library* – The BitWarden Desktop Application pulls bytes from Node's crypto library for salt. Bytes are generated psuedorandomly and it does not mention how or where, only that a entropy requirement must be hit before it will return a value. ![Node claims that the generation is cryptographically strong.](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback)
 * E4: *2FA Policy Review*
