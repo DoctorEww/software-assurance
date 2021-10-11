@@ -1,10 +1,10 @@
-[BACK](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCases.md)
-### Claim 4 - The system mitigates the impact of database theft
+## Assurance Claim 4: The system mitigates the impact of database theft
 
-### Diagram
-![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DatabaseTheft/DatabaseTheftV2.jpg)
+[Back to Assurance Cases](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCases.md)
 
 ### Alignment Assessment
+
+BitWarden currently provides the following evidences per the Assurance Case needs E1-E6 in the diagram below:
 
 - **E1**: The crypto service used by the bitwarden app is abstracted in their js-lib. The only form of symmetric encryption declared for use within the app (and the bitwarden library as a whole) is AES (![lines 17-21](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/common/src/abstractions/cryptoFunction.service.ts)). Furthermore, when these funtions are brought out of abstract in the library the aesEncrypt function is hard coded into AES-256-CBC (![line 114](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/node/src/services/nodeCryptoFunction.service.ts#L114)).
 
@@ -17,3 +17,6 @@
 - **E5**: 
 
 - **E6**: 
+
+### Diagram
+![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DatabaseTheft/DatabaseTheftV2.jpg)
