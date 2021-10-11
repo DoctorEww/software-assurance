@@ -13,6 +13,9 @@
 ### Alignment Assesment Summary
 
 * Assurance Claim 1 - [The system minimizes information disclosure during communication](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/InfoDisclosure/readme.md)
+
+  BitWarden takes a number of steps to minimize the disclosure of information during communication. AES encryption is utilized for all in transit communications. Salts are generated via the use of Node's PRG. Though the Node documentation indicates that a sufficient level of entropy is required to return a given salt, the process remains abstract as more documentation is unavailable. Salt is utilized, however, a sufficient length is not required, only highly *recommended*. Finally, BitWarden implements the PKDBF2 SHA256 algorithm for sufficient key stretching strength.
+
 * Assurance Claim 2 - [The system provides reasonable protection from malicious input](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/MaliciousInput/readme.md)
 * Assurance Claim 3 - [The system protects data integrity during transmission](https://github.com/DoctorEww/software-assurance/tree/main/AssuranceCase/DataIntegrity#readme)
 * Assurance Claim 4 - [The system mitigates the impact of database theft](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DatabaseTheft/readme.md)
