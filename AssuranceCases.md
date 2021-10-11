@@ -52,4 +52,4 @@ Every member of the team continues to put in their best effort and looks forward
 
 ### Teamwork
 
-To view our project flow, please find our Security Requirements Project [here](https://github.com/DoctorEww/software-assurance/projects/5).
+To view our project flow, please find our *Assurance Cases* Project [here](https://github.com/DoctorEww/software-assurance/projects/5).
