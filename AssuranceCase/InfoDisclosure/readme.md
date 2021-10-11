@@ -2,6 +2,10 @@
 
 [Back to Assurance Cases](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCases.md)
 
+### Description:
+
+The BitWarden Desktop Application, as a means of synchronization and messaging, is responsible for the management of communications between users. Due to the critical importance of confidentiality in data in motion, the system must be shown to minimize the disclosure of information during communication to reduce doubts about the security of the application.
+
 ### Alignment Assessment:
 
 BitWarden currently provides the following evidences per the Assurance Case needs E1-E4 in the diagram below:
