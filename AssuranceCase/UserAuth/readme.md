@@ -8,17 +8,7 @@ Before utilizing any of the password management or messaging functionality of th
 
 ### Alignment Assessment:
 
-I. To reasonably assure software security per the Assurance case above, the supporting arguments derived from this top level claim require the following evidence:
-
-* E1: *Password Policy Review*
-* E2: *Source Code Review: Salt*
-* E3: *Hardware Randomness Library*
-* E4: *2FA Policy Review*
-* E5: *Password Recovery Report*
-* E6: *Source Code Review: Login Attempts*
-* E7: *Source Code Review: Hashing*
-
-II. BitWarden currently provides the following evidence per the Assurance Case needs above:
+BitWarden currently provides the following evidences per the Assurance Case needs E1-E7 in the diagram below:
 
 * E1: *Password Policy Review* - The system uses a password generation [protocol](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/passwordGeneration.service.ts#L204) that requires the following default characteristics:
   * Minimum Length: 14
