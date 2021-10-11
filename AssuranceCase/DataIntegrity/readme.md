@@ -17,4 +17,4 @@
 
 - **E5**: PKDBF2_SHA256 is the RFC-8018 algoritm used in Bitwarden. ![Bitwarden has it set to run a minimum of 5000 cycles.](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/common/src/services/crypto.service.ts#L432)
 
-- **E6**: A review of the source code to verify that password input hides the password as user is typing it in and allows for the user to toggle the visibility of the password.
+- **E6**: A review of the source code to verify that password input hides the password as user is typing it in and allows for the user to toggle the visibility of the password.  As of this time, Bitwarden does not implement this type of security and only hides the sender's email address when the recipient opens the send request and it is protected with a password. 
