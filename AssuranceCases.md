@@ -32,11 +32,15 @@
 
 * **Assurance Claim 4** - [The system mitigates the impact of database theft](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DatabaseTheft/readme.md)
 
-  The password database creates the kernel around which the BitWarden Desktop Application is wrapped. Due to the critical nature of the password database, assurances must be created so as to reduce the doubts about the security of the database. The system takes a number of steps to mitigate the impact of database theft. All communications to and from the database is encrypted via AES 256. Salt is generated via the Node PRG (See above concerns). The PKDBF2 SHA 256 key stretching algorithm ensures secure key expansion. 
+  **Overview**: The password database creates the kernel around which the BitWarden Desktop Application is wrapped. Due to the critical nature of the password database, assurances must be created so as to reduce the doubts about the security of the database. The system takes a number of steps to mitigate the impact of database theft. All communications to and from the database is encrypted via AES 256. Salt is generated via the Node PRG (See above concerns). The PKDBF2 SHA 256 key stretching algorithm ensures secure key expansion. 
+  
+  **Conclusion**: Per assurance claim 4, the BitWarden Desktop Application maintains a high level of alignment with the assurance cases developed during this study.
 
 * **Assurance Cliam 5** - [The system ensures proper user authentication](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/UserAuth/readme.md)
 
-  The system exhibits a number of characteristics that mitigate doubts concerning user authentication. A moderate password policy is enforced, however, more complexity would increase the strength of passwords significantly. The system uses salts, yet only *recommends* salts of over 16bytes. Randomness is achieved through the PRG included in the Node library. As indicated by Node documentation, the salt is only returned when sufficient entropy is achieved, however, details of the process are obscure. The two-factor authentication process meets security requirements with a high level of assurance. Password recovery is disallowed, circumventing recovery attacks and 2FA attacks. Login attempts aren't limited, but Captchas are used to a limited extent. Industry standard encryption SHA256 is utilized in hashing.
+  **Overview**: The system exhibits a number of characteristics that mitigate doubts concerning user authentication. A moderate password policy is enforced, however, more complexity would increase the strength of passwords significantly. The system uses salts, yet only *recommends* salts of over 16 bytes. Randomness is achieved through the PRG included in the Node library. As indicated by Node documentation, the salt is only returned when sufficient entropy is achieved, however, details of the process are obscure. The two-factor authentication process meets security requirements with a high level of assurance. Password recovery is disallowed, circumventing recovery attacks and 2FA attacks. Login attempts aren't limited, but Captchas are used to a limited extent. Industry standard encryption SHA256 is utilized in hashing.
+  
+  **Conclusion**: Per assurance claim 5, the BitWarden Desktop Application maintains a moderate level of alignment with the assurance cases developed during this study.
 
 ### Reflection
 
