@@ -14,7 +14,7 @@ BitWarden currently provides the following evidences per the Assurance Case need
 
 - **E2**: Bitwarden pulls bytes from Node's crypto library for salt. Bytes are generated psuedorandomly and it does not mention how or where, only that a entropy requirement must be hit before it will return a value. ![Node claims that the generation is cryptographically strong.](https://nodejs.org/api/crypto.html#crypto_crypto_randombytes_size_callback)
 
-- **E3**: Salt is used, not sure how much yet. Appears to be made during runtime since there is no util function made I can find yet.
+- **E3**: The system utilizes the Node [pbkdf2](https://nodejs.org/api/crypto.html#crypto_crypto_pbkdf2_password_salt_iterations_keylen_digest_callback) function for key derivation. As such, a salt length is required and is *recommended* to be at least 16 bytes long, however, the length is not enforced. This indicates a slight *gap* between the necessary assurance requirements and the implemented features of the system in that a sufficient length salt is *recommended* rather than *enforced*.
 
 - **E4**: PKDBF2_SHA256 is the RFC-8018 algoritm used in Bitwarden. ![Bitwarden has it set to run a minimum of 5000 cycles.](https://github.com/bitwarden/jslib/blob/542852a3be13328acac8019a5b358e2608883a43/common/src/services/crypto.service.ts#L432)
 
