@@ -23,4 +23,4 @@ BitWarden currently provides the following evidences per the Assurance Case need
 - **E5**: A review of the source code to ensure 100,000 rounds are completed within the function performing the hashing algorithm.
 
 ### Diagram
-![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DatabaseTheft/DatabaseTheftV3.png)
+![](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCase/DatabaseTheft/DatabaseTheftV4.jpg)
