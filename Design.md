@@ -1,10 +1,10 @@
 ### Data Flow Diagrams and Threat Modeling
 
-1. Diagram 1
-2. Diagram 2
-3. Diagram 3
-4. Diagram 4
-5. Diagram 5
+1. Login Process
+2. Export Vault Process
+3. Password Generator Process
+4. Send Text Process
+5. Add Member Process
 
 ### Observations
 
