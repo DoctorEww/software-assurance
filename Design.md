@@ -14,82 +14,83 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
+    
   - *ID: 12*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 14*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 15*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 16*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 17*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 18*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 19*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 20*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 21*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 22*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 23*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 28*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 29*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *Id: 38*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   - *ID: 39*
     - Threat Name:
     - Threat Justification:
     - Existing Mitigations:
-    - Notable Gaps:
+    - Notable Gap:
   
 **3. Design Observations Summary**
 
