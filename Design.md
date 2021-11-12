@@ -1,10 +1,7 @@
-### Data Flow Diagrams and Threat Modeling
+### Data Flow Diagram and Threat Modeling
 
-1. Login Process
-2. Export Vault Process
-3. Password Generator Process
-4. Send Text Process
-5. Add Member Process
+1. BitWarden DFD
+2. Threat Modeling Report
 
 ### Observations
 
