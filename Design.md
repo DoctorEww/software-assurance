@@ -52,8 +52,8 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations:
     - Notable Gap:
   - *Threat ID: 20*
-    - Threat Name:
-    - Threat Justification:
+    - Threat Name: Spoofing of Destination Data Store File System (JR)
+    - Threat Justification: Nothing sensitive is written to the file system. File system requires user level authentication on the system.
     - Existing Mitigations:
     - Notable Gap:
   - *Threat ID: 21*
@@ -72,13 +72,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations:
     - Notable Gap:
   - *Threat ID: 28*
-    - Threat Name:
-    - Threat Justification:
+    - Threat Name: The File System Data Store Could Be Corrupted (JR)
+    - Threat Justification: No sensitive data stored; risk Accepted
     - Existing Mitigations:
     - Notable Gap:
   - *Threat ID: 29*
-    - Threat Name:
-    - Threat Justification:
+    - Threat Name: Data Store Denies File System Potentially Writing Data (JR)
+    - Threat Justification: Operating System error event is created.
     - Existing Mitigations:
     - Notable Gap:
   - *Threat Id: 38*
