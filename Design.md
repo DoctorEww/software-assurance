@@ -56,14 +56,14 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 9* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
     - Justification: Input validation and sanitization is used to disallow local code execution.
-    - Existing Mitigations: BitWarden currently trusts all file system operations; no mitigation exists.
-    - Notable Gap: *BitWarden does not check incoming data from the file system for ptotential malicious input.*
+    - Existing Mitigations: BitWarden currently trusts all file system operations; **no mitigation exists.**
+    - Notable Gap: *BitWarden does not check incoming data from the file system for potential malicious input.*
 
   - *Threat ID: 10* - Adam
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
     - Justification: Input validation and sanitization is used to ensure data is sanitized before entering the program flow.
-    - Existing Mitigations: BitWarden currently trusts all file system operations; no mitigation exists.
-    - Notable Gap: *BitWarden does not check incoming data from the file system for ptotential malicious input.*
+    - Existing Mitigations: BitWarden currently trusts all file system operations; **no mitigation exists.**
+    - Notable Gap: *BitWarden does not check incoming data from the file system for potential malicious input.*
 
   - *Threat ID: 11*
     - Threat Name: Spoofing of the BitWarden API External Destination Entity (CL)
