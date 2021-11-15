@@ -13,18 +13,18 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID:  2*
     - Threat Name: 1.0 Bitwarden Desktop Application may be able to impersonate the context of BitWarden API in order to gain additional privilege. (CL)
     - Threat Justification: authentication is required in order to gain additional privilege
-    - Existing Mitigations: 
+    - Existing Mitigations: Bitwarden implements HTTP Strict Transport Security and forces all connections to use TLS.
     - Notable Gap: None
     
   - *Threat ID: 12*
     - Threat Name: Risks from Logging (CL)
     - Threat Justification: logs do not contain sensitive information
-    - Existing Mitigations: 
+    - Existing Mitigations: the logs only contain a minimal amount of information that includes mainly unique IDs, timestamps, and ipaddresses.
     - Notable Gap: None
   - *Threat ID: 14*
     - Threat Name: Spoofing of the BitWarden API External Destination Entity (CL)
-    - Threat Justification: Use of digital certificates would nesure proper authentication
-    - Existing Mitigations: 
+    - Threat Justification: Use of digital certificates would en ensure proper authentication
+    - Existing Mitigations: Bitwarden uses Microsoft Azure manager to ensure that security is maintained as well as implementing one-way salted hashing measures.
     - Notable Gap: None
   - *Threat ID: 15*
     - Threat Name:
