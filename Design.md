@@ -20,7 +20,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 2*
     - Threat Name: Risks from Logging
     - Justification: Log reader uses input sanitization and validation.
-    - Existing Mitigations: BitWarden currently trusts all file system operations;
+    - Existing Mitigations: BitWarden currently trusts all file system operations.
     - Notable Gap: **BitWarden does not check incoming data from the file system for potential malicious input.**
     
   - *Threat ID: 3*
@@ -56,19 +56,19 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 9*
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
     - Justification: Input validation and sanitization is used to disallow local code execution.
-    - Existing Mitigations: BitWarden currently trusts all file system operations;
+    - Existing Mitigations: BitWarden currently trusts all file system operations.
     - Notable Gap: **BitWarden does not check incoming data from the file system for potential malicious input.**
 
   - *Threat ID: 10*
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
     - Justification: Input validation and sanitization is used to ensure data is sanitized before entering the program flow.
-    - Existing Mitigations: BitWarden currently trusts all file system operations;
+    - Existing Mitigations: BitWarden currently trusts all file system operations.
     - Notable Gap: **BitWarden does not check incoming data from the file system for potential malicious input.**
 
   - *Threat ID: 11*
     - Threat Name: Spoofing of the BitWarden API External Destination Entity
     - Justification: Use of digital certificates ensures proper authentication
-    - Existing Mitigations: Bitwarden uses Microsoft Azure manager to ensure that security is maintained as well as implementing one-way salted hashing measures
+    - Existing Mitigations: Bitwarden uses Microsoft Azure manager to ensure that security is maintained as well as implementing one-way salted hashing measures.
     - Notable Gap: None
 
   - *Threat ID: 14*
