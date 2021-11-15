@@ -98,8 +98,8 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 19* - Adam
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
     - Justification: Input validation and sanitization is used to ensure all code entering the application is scrubbed.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input.
+    - Notable Gap: While user input is scrubbed, the validation process is not explicit, thus, due to a lack of clarity, flaws could exist.
 
   - *Threat ID: 20*
     - Threat Name: Spoofing of Destination Data Store File System
