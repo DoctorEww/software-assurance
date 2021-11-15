@@ -199,6 +199,25 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   
 **3. Design Observations Summary**
 
+By outlining the overall data flow of the 1.0 BitWarden Desktop Application and identifying potential trust boundaries, automatic threat generation revealed a number of potential security threats. In general, the 1.0 BitWarden Desktop Application facilitates the transfer of data between two (2) External Interactors (EI) and one (1) Data Store (DS). Information is relayed to and from the application by the following EIs: (1) the user, and (2) the online BitWarden API. A single, local DS is located on the file system of the local computer.
+
+With these entities in mind, trust boundaries were established between the User and the 1.0 BitWarden Desktop Application, the 1.0 BitWarden Desktop Application and the external BitWarden API, and the 1.0 BitWarden Desktop Application and the local File System. From these trust boundaries, the Microsoft Threat Modeling tool recognized a large number automatically generated threats. From these threats, 30 were evaluated by the team as *High Priority*.
+
+From these 30 established, high priority threats, mitigations were formulated and justified. From these justifications, the actual 1.0 BitWarden Desktop Application was canvassed for comparative flaws. While the existing 1.0 BitWarden Desktop Application generally ensures authentication and encryption security, there are a number of gaps that became evident throughout the analysis. 
+
+Notable Gaps:
+1. BitWarden Desktop Application (BDA) exhibits a strict requirement that the file system be accessible. 
+    - Should the file system be unavailable, BDA fails to function.
+2. In conjunction with the gap above, BDA relies on the file system *without* performing any file system input validation or sanitization.
+    - With such an explicitly required Data Store, a input validation or sanitization from the Data Store increases the likelihood of application crashes and errors.
+3. This lack of input validation and sanitization results in a large number of BDA crashes.
+4. These crashes are inadequately handled by BDA, causing system errors and operating system crash events.
+5. BDA allows log and configuration data to be tampered with, while exhibiting no input validation and sanitization from this data.
+6. When accessing the BitWarden Server, direct downloads from the server aren’t sanitized.
+    - All uploads to the server are carefully authenticated and sanitized, creating an assumption that all downloads are safe.
+7. BDA appears to provide user input and sanitization, yet the process is unclear. 
+
+
 **4. Reflection**
 
 Working through the initial phases of this portion of the project proved slightly difficult due to the tendency to over complicate the Data Flow Diagrams. Upon meeting with Dr. Gandhi, however, the team grasped the essence of what information our DFD(s) are supposed to convey. We quickly reoriented, reestablished a Level 0 DFD for the overall application, and realized that most data flow in the program flowed through the UI to the BitWarden Online API. A limited number of local memory interactions added a single data store and pushed us to a Level 1 diagram. The team decided that further granularity was not necessary.
