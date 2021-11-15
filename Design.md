@@ -134,7 +134,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 26*
     - Threat Name: Authorization Bypass
     - Justification: Logging adheres to system defined user trust levels.
-    - Existing Mitigations: File are stored under a system defined user's profile.
+    - Existing Mitigations: Files are stored under a system defined user's profile.
     - Notable Gap: None.
 
   - *Threat ID: 28*
