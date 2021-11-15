@@ -20,13 +20,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 2* - Adam
     - Threat Name: Risks from Logging
     - Justification: Log reader uses input sanitization and validation.
-    - Existing Mitigations: BitWarden currently trusts all file system operations; **no mitigation exists.**
+    - Existing Mitigations: BitWarden currently trusts all file system operations;
     - Notable Gap: **BitWarden does not check incoming data from the file system for potential malicious input.**
     
   - *Threat ID: 3*
     - Threat Name: Weak Access Control for a Resource
     - Justification: BitWarden Desktop Application only has permissions to read it's own file space.
-    - Existing Mitigations: BitWarden runs as a user process which has permissions to read and write all user files. **no mitigation exists** 
+    - Existing Mitigations: BitWarden runs as a user process which has permissions to read and write all user files.
     - Notable Gap: **BitWarden has permissions to read and write files it does not need to**
  
   - *Threat ID: 5*
