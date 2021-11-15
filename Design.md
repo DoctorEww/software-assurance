@@ -159,13 +159,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Threat Name: Data Flow User Data Is Potentially Interrupted
     - Justification: An operating System error event is created. Application can function without the file system.
     - Existing Mitigations: Application recreates files that are missing
-    - Notable Gap: **BitWarden needs the file system to function**
+    - Notable Gap: **BitWarden needs the file system to function correctly.**
 
   - *Threat ID: 32*
     - Threat Name: Data Store Inaccessible
     - Justification: Application can function without the explicit use of the file system
     - Existing Mitigations: Application recreates files that are missing
-    - Notable Gap: **BitWarden needs the file system to function**
+    - Notable Gap: **BitWarden needs the file system to function correctly.**
 
   - *Threat ID: 34* - Adam
     - Threat Name: Spoofing the 1.0 Bitwarden Desktop Application Process
