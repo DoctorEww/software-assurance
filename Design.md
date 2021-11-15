@@ -92,8 +92,8 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 18* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
     - Justification: Input sanitization and valildation is used to sanitize all input coming from remote sources.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: While syncronizations to and from the BitWarden server are *carefully* and *consistently* [authenticated](https://github.com/bitwarden/jslib/blob/8f177e2d3a879b854db5c6e6d7d386b24d637a66/common/src/services/sync.service.ts#L288), the codebase is [signed]() to ensure tampering is minimized, and Azure [upload sanitization](https://github.com/bitwarden/jslib/blob/8f177e2d3a879b854db5c6e6d7d386b24d637a66/common/src/services/azureFileUpload.service.ts) is used to put informaiton on the server, it appears the BitWarden assumes data *returning* from the server is trustworthy. The only exhibition of server data validation occurs when a [vault timeout](https://github.com/bitwarden/jslib/blob/32774561f37bdcf9abb80276c5d1958b7ec192de/angular/src/components/settings/vault-timeout-input.component.ts) occurs.
+    - Notable Gap: All data going to the server is trustworthy and the codebase is signed, but direct downloads aren't sanitized.
 
   - *Threat ID: 19* - Adam
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
