@@ -104,8 +104,8 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 20*
     - Threat Name: Spoofing of Destination Data Store File System
     - Justification: Nothing sensitive is written to the file system. File system requires user level authentication on the system.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: The logs written contain only a minimal amount of information. It's composed of mostly unique IDs, timestamps, and IPs. The file system requires the system defined user trust level.
+    - Notable Gap: None.
 
   - *Threat ID: 21*
     - Threat Name: Risks from Logging
@@ -134,20 +134,20 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 26*
     - Threat Name: Authorization Bypass
     - Justification: Logging adheres to system defined user trust levels.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: File are stored under a system defined user's profile.
+    - Notable Gap: None.
 
   - *Threat ID: 28*
     - Threat Name: The File System Data Store Could Be Corrupted
     - Justification: No sensitive data stored; risk accepted
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: The application crashes if the files are corrupted.
+    - Notable Gap: **BitWarden crashes when files are corrupted**
 
   - *Threat ID: 29*
     - Threat Name: Data Store Denies File System Potentially Writing Data
     - Justification: Operating System error event is created
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: BitWarden crashes and does not actually handle any errors itself.
+    - Notable Gap: **BitWarden needs the file system to function correctly.**
 
   - *Threat ID: 30*
     - Threat Name: Data Flow Sniffing
