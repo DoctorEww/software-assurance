@@ -55,13 +55,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
 
   - *Threat ID: 9* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
-    - Justification: Input validation and sanitization.
+    - Justification: Input validation and sanitization is used to disallow remote code execution.
     - Existing Mitigations:
     - Notable Gap:
 
   - *Threat ID: 10* - Adam
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
-    - Justification: Input validation and sanitization
+    - Justification: Input validation and sanitization is used to ensure data is sanitized before entering the program flow.
     - Existing Mitigations:
     - Notable Gap:
 
@@ -91,13 +91,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
 
   - *Threat ID: 18* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
-    - Justification: Input sanitization and valildation
+    - Justification: Input sanitization and valildation is used to sanitize all input coming from remote sources.
     - Existing Mitigations:
     - Notable Gap:
 
   - *Threat ID: 19* - Adam
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
-    - Justification: Input validation and sanitization
+    - Justification: Input validation and sanitization is used to ensure all code entering the application is scrubbed.
     - Existing Mitigations:
     - Notable Gap:
 
@@ -187,13 +187,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     
   - *Threat ID: 40* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
-    - Justification: Input validation and sanitization
+    - Justification: Input validation and sanitization is implemented to ensure clean input.
     - Existing Mitigations:
     - Notable Gap:
 
   - *Threat ID: 41* - Adam
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
-    - Justification: 	Input validation and sanitization
+    - Justification: Input validation and sanitization is used to sterilize all incoming data.
     - Existing Mitigations:
     - Notable Gap:
   
