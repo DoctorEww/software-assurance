@@ -7,7 +7,7 @@
 
 **1. Introduction**
 
-In effort to best mitigate the highest impact threats, all automaitcally generated threats evaluated in review with a High priority were divided among the team and assessed for existing mitigations in the current BitWarden implementation. During individual threat review: (1) the threat is identified, (2) a justification is established, (3) existing mitigations are documented, and (4) notable gaps in identified threats and existing mitigations are highlighted. 
+In effort to best mitigate the highest impact threats, all automaitcally generated threats evaluated in review with a High priority were divided among the team and assessed for existing mitigations in the current BitWarden implementation. During individual threat review: (1) the threat is identified, (2) a justification for the mitigation of the threat is established, (3) existing, *implemented* mitigations are documented, and (4) notable gaps in identified threats and existing mitigations are highlighted. 
 
 **2. Individual Threat Review**
     
