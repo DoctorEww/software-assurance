@@ -27,13 +27,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Threat Name: Weak Access Control for a Resource
     - Justification: BitWarden Desktop Application only has permissions to read it's own file space.
     - Existing Mitigations: BitWarden runs as a user process which has permissions to read and write all user files.
-    - Notable Gap: **BitWarden has elevated permissions to read and write files; these permissions are unnecessary**
+    - Notable Gap: **BitWarden has elevated permissions to read and write files; these permissions are unnecessary.**
  
   - *Threat ID: 5*
     - Threat Name: Potential Data Repudiation by 1.0 Bitwarden Desktop Application
     - Justification: In the event of non-readable files, new files are written.
     - Existing Mitigations: BitWarden replaces non-existing files, tampered files throw a crash.
-    - Notable Gap: **BitWarden crashes when local files are tampered with**
+    - Notable Gap: **BitWarden crashes when local files are tampered with.**
 
   - *Threat ID: 6*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
@@ -45,14 +45,14 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Threat Name: Data Flow Application Data Is Potentially Interrupted
     - Justification: Application functions without the explicit need for the file system
     - Existing Mitigations: Application recreates files that are missing
-    - Notable Gap: **BitWarden needs the file system to function**
+    - Notable Gap: **BitWarden requires the file system to function correctly.**
 
   - *Threat ID: 8*
     - Threat Name: Data Store Inaccessible
     - Justification: Application functions without the explicit need for the file system
     - Existing Mitigations: Application recreates files that are missing
-    - Notable Gap: **BitWarden needs the file system to function**
-
+    - Notable Gap: **BitWarden requires the file system to function correctly.**
+ 
   - *Threat ID: 9* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
     - Justification: Input validation and sanitization is used to disallow local code execution.
