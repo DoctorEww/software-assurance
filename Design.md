@@ -146,7 +146,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 29*
     - Threat Name: Data Store Denies File System Potentially Writing Data
     - Justification: Operating System error event is created
-    - Existing Mitigations: BitWarden crashes and does not actually handle any errors itself.
+    - Existing Mitigations: BitWarden [crashes](https://github.com/DoctorEww/software-assurance/blob/main/Utility/corrupted_file.PNG) and does not actually handle any errors itself.
     - Notable Gap: **BitWarden needs the file system to function correctly.**
 
   - *Threat ID: 30*
