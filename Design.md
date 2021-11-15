@@ -27,7 +27,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations: Bitwarden uses Microsoft Azure manager to ensure that security is maintained as well as implementing one-way salted hashing measures.
     - Notable Gap: None
   - *Threat ID: 15*
-    - Threat Name:
+    - Threat Name: - DON'T WORK ON/Potential Cut
     - Threat Justification:
     - Existing Mitigations:
     - Notable Gap:
@@ -37,12 +37,12 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations: There are no handlers or means for sensitive data to be leaked or logged on crash.
     - Notable Gap: None.
   - *Threat ID: 17*
-    - Threat Name:
+    - Threat Name: - DON'T WORK ON/Potential Cut
     - Threat Justification:
     - Existing Mitigations:
     - Notable Gap:
   - *Threat ID: 18*
-    - Threat Name:
+    - Threat Name: - DON'T WORK ON/Potential Cut
     - Threat Justification:
     - Existing Mitigations:
     - Notable Gap:
