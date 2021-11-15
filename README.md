@@ -17,3 +17,5 @@ Part 1 - [Project Proposal](https://github.com/DoctorEww/software-assurance/blob
 Part 2 - [Security Requirements](https://github.com/DoctorEww/software-assurance/blob/main/SecurityRequirements.md)
 
 Part 3 - [Assurance Case Report](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCases.md)
+
+Part 4 - [Design for Software Security](https://github.com/DoctorEww/software-assurance/blob/main/Design.md)
