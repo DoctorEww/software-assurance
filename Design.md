@@ -209,7 +209,7 @@ From these 30 established, high priority threats, mitigations were formulated an
 1. BitWarden Desktop Application (BDA) exhibits a strict requirement that the file system be accessible. 
     - Should the file system be unavailable, BDA fails to function.
 2. In conjunction with the gap above, BDA relies on the file system *without* performing any file system input validation or sanitization.
-    - With such an explicitly required Data Store, a input validation or sanitization from the Data Store increases the likelihood of application crashes and errors.
+    - With such an explicitly required Data Store, an overt lack of input validation or sanitization from the Data Store increases the likelihood of application crashes and errors.
 3. This lack of input validation and sanitization results in a large number of BDA crashes.
 4. These crashes are inadequately handled by BDA, causing system errors and operating system crash events.
 5. BDA allows log and configuration data to be tampered with, while exhibiting no input validation and sanitization from this data.
