@@ -11,13 +11,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
 
 **2. Individual Threat Review**
     
-  - *Threat ID: 1* - Adam
+  - *Threat ID: 1*
     - Threat Name:  Spoofing of Source Data Store File System
     - Justification: All returning data is signed and authenticated.
     - Existing Mitigations: All synchronizations to and from the BitWarden server are *carefully* and *consistently* [authenticated](https://github.com/bitwarden/jslib/blob/8f177e2d3a879b854db5c6e6d7d386b24d637a66/common/src/services/sync.service.ts#L288) and the codebase is [signed](https://github.com/DoctorEww/software-assurance/blob/main/Utility/Signed.jpg).
     - Notable Gap: None
 
-  - *Threat ID: 2* - Adam
+  - *Threat ID: 2*
     - Threat Name: Risks from Logging
     - Justification: Log reader uses input sanitization and validation.
     - Existing Mitigations: BitWarden currently trusts all file system operations;
@@ -53,31 +53,31 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations: Application recreates files that are missing
     - Notable Gap: **BitWarden requires the file system to function correctly.**
  
-  - *Threat ID: 9* - Adam
+  - *Threat ID: 9*
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
     - Justification: Input validation and sanitization is used to disallow local code execution.
     - Existing Mitigations: BitWarden currently trusts all file system operations; **no mitigation exists.**
     - Notable Gap: **BitWarden does not check incoming data from the file system for potential malicious input.**
 
-  - *Threat ID: 10* - Adam
+  - *Threat ID: 10*
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
     - Justification: Input validation and sanitization is used to ensure data is sanitized before entering the program flow.
     - Existing Mitigations: BitWarden currently trusts all file system operations; **no mitigation exists.**
     - Notable Gap: **BitWarden does not check incoming data from the file system for potential malicious input.**
 
-  - *Threat ID: 11* - Chris
+  - *Threat ID: 11*
     - Threat Name: Spoofing of the BitWarden API External Destination Entity (CL)
     - Justification: Use of digital certificates ensures proper authentication
     - Existing Mitigations: Bitwarden uses Microsoft Azure manager to ensure that security is maintained as well as implementing one-way salted hashing measures
     - Notable Gap: None
 
-  - *Threat ID: 14* - Chris
+  - *Threat ID: 14*
     - Threat Name: 1.0 Bitwarden Desktop Application may be able to impersonate the context of BitWarden API in order to gain additional privilege. (CL)
     - Justification: Authentication is required in order to gain additional privilege
     - Existing Mitigations: Bitwarden implements HTTP Strict Transport Security and forces all connections to use TLS.
     - Notable Gap: None
 
-  - *Threat ID: 16* - ?
+  - *Threat ID: 16*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
     - Threat Justification: No logs or dumps produced following an application crash.
     - Existing Mitigations: There are no handlers or means for sensitive data to be leaked or logged on crash.
@@ -89,13 +89,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations:
     - Notable Gap:
 
-  - *Threat ID: 18* - Adam
+  - *Threat ID: 18*
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
     - Justification: Input sanitization and valildation is used to sanitize all input coming from remote sources.
     - Existing Mitigations: While synchronizations to and from the BitWarden server are *carefully* and *consistently* [authenticated](https://github.com/bitwarden/jslib/blob/8f177e2d3a879b854db5c6e6d7d386b24d637a66/common/src/services/sync.service.ts#L288), the codebase is [signed](https://github.com/DoctorEww/software-assurance/blob/main/Utility/Signed.jpg) to ensure tampering is minimized, and Azure [upload sanitization](https://github.com/bitwarden/jslib/blob/8f177e2d3a879b854db5c6e6d7d386b24d637a66/common/src/services/azureFileUpload.service.ts) is used to put information on the server, it appears the BitWarden assumes data *returning* from the server is trustworthy. The only exhibition of server data validation occurs when a [vault timeout](https://github.com/bitwarden/jslib/blob/32774561f37bdcf9abb80276c5d1958b7ec192de/angular/src/components/settings/vault-timeout-input.component.ts) occurs.
     - Notable Gap: **All data going to the server is trustworthy and the codebase is signed, but direct downloads aren't sanitized.**
 
-  - *Threat ID: 19* - Adam
+  - *Threat ID: 19*
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
     - Justification: Input validation and sanitization is used to ensure all code entering the application is scrubbed.
     - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input.
@@ -107,7 +107,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations:
     - Notable Gap:
 
-  - *Threat ID: 21* - Chris
+  - *Threat ID: 21*
     - Threat Name: Risks from Logging (CL)
     - Justification: Logs do not contain sensitive information
     - Existing Mitigations: The logs only contain a minimal amount of information that includes mainly unique IDs, timestamps, and ipaddresses.
@@ -167,13 +167,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations: Application recreates files that are missing
     - Notable Gap: **BitWarden needs the file system to function correctly.**
 
-  - *Threat ID: 34* - Adam
+  - *Threat ID: 34*
     - Threat Name: Spoofing the 1.0 Bitwarden Desktop Application Process
     - Justification: The local codebase is signed
     - Existing Mitigations: BitWarden currently [signs](https://github.com/DoctorEww/software-assurance/blob/main/Utility/Signed.jpg) all distributions.
     - Notable Gap: None
 
-  - *Threat ID: 35* - Adam
+  - *Threat ID: 35*
     - Threat Name: Potential Lack of Input Validation for 1.0 Bitwarden Desktop Application
     - Justification: The application enforces user input validation and sanitization.
     - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input. User input is never executed.
@@ -185,13 +185,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations: In the event of a crash BitWarden relaunches the application.
     - Notable Gap: None
     
-  - *Threat ID: 40* - Adam
+  - *Threat ID: 40*
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
     - Justification: Input validation and sanitization is implemented to ensure clean input.
     - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input. User input is never executed.
     - Notable Gap: **While user input is scrubbed, the validation process is not *explicit*. Due to a simple lack of clarity, flaws could exist.**
 
-  - *Threat ID: 41* - Adam
+  - *Threat ID: 41*
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
     - Justification: Input validation and sanitization is used to sterilize all incoming data.
     - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input. User input is never executed.
