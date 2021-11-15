@@ -38,8 +38,8 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 6*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
     - Justification: Coding best practices utilized.
-    - Existing Mitigations: In the event of a crash BitWarden relaunches the application.
-    - Notable Gap: None
+    - Existing Mitigations: BitWarden crashes throwing an error message.
+    - Notable Gap: *BitWarden does not handle crashes*
   
   - *Threat ID: 7*
     - Threat Name: Data Flow Application Data Is Potentially Interrupted
@@ -182,8 +182,8 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 38*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
     - Justification: Coding best practices utilized
-    - Existing Mitigations: In the event of a crash BitWarden relaunches the application.
-    - Notable Gap: None
+    - Existing Mitigations: BitWarden crashes throwing an error message.
+    - Notable Gap: *BitWarden does not handle crashes*
     
   - *Threat ID: 40* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
