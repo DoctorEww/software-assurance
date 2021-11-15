@@ -170,14 +170,14 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 34* - Adam
     - Threat Name: Spoofing the 1.0 Bitwarden Desktop Application Process
     - Justification: The local codebase is signed
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: BitWarden currently [signs](https://github.com/DoctorEww/software-assurance/blob/main/Utility/Signed.jpg) all distributions.
+    - Notable Gap: None
 
   - *Threat ID: 35* - Adam
     - Threat Name: Potential Lack of Input Validation for 1.0 Bitwarden Desktop Application
     - Justification: The application enforces user input validation and sanitization.
-    - Existing Mitigations: BitWarden currently [signs](https://github.com/DoctorEww/software-assurance/blob/main/Utility/Signed.jpg) all distributions.
-    - Notable Gap: None
+    - Existing Mitigations: 
+    - Notable Gap:
 
   - *Threat ID: 38*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
