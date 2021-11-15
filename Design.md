@@ -91,7 +91,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
 
   - *Threat ID: 18* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
-    - Justification:	Input sanitization and valildation
+    - Justification: Input sanitization and valildation
     - Existing Mitigations:
     - Notable Gap:
 
