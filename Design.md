@@ -1,10 +1,10 @@
 ### Contents
 
-1. [Data Flow Diagram and Threat Modeling](#Data-Flow-Diagram-and-Threat-Modeling)
-3. [Introduction](#Introduction)
-4. [Individual Threat Review](#Individual-Threat-Review)
-5. [Design Observations Summary](#Design-Observations-Summary)
-6. [Reflection](#Reflection)
+1. [Data Flow Diagram and Threat Modeling](#1.-Data-Flow-Diagram-and-Threat-Modeling)
+3. [Introduction](#2.-Introduction)
+4. [Individual Threat Review](#3.-Individual-Threat-Review)
+5. [Design Observations Summary](#4.-Design-Observations-Summary)
+6. [Reflection](#5.-Reflection)
 
 ### 1. Data Flow Diagram and Threat Modeling
 
