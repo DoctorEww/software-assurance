@@ -17,7 +17,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations:
     - Notable Gap:
 
-  - *Threat ID: 2*
+  - *Threat ID: 2* - Adam
     - Threat Name: Risks from Logging
     - Justification: Log reader uses input sanitization and validation.
     - Existing Mitigations:
@@ -121,19 +121,19 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
 
   - *Threat ID: 23*
     - Threat Name: Data Logs from an Unknown Source
-    - Justification: 	Logging adheres to system defined user trust levels.
+    - Justification: Logging adheres to system defined user trust levels.
     - Existing Mitigations:
     - Notable Gap:
 
   - *Threat ID: 25*
     - Threat Name: Potential Weak Protections for Audit Data
-    - Justification: 	No sensitive information stored in the local logs.
+    - Justification: No sensitive information stored in the local logs.
     - Existing Mitigations:
     - Notable Gap:
 
   - *Threat ID: 26*
     - Threat Name: Authorization Bypass
-    - Justification: 	Logging adheres to system defined user trust levels.
+    - Justification: Logging adheres to system defined user trust levels.
     - Existing Mitigations:
     - Notable Gap:
 
@@ -167,21 +167,21 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations:
     - Notable Gap:
 
-  - *Threat ID: 34*
+  - *Threat ID: 34* - Adam
     - Threat Name: Spoofing the 1.0 Bitwarden Desktop Application Process
     - Justification: The local codebase is signed
     - Existing Mitigations:
     - Notable Gap:
 
-  - *Threat ID: 35*
+  - *Threat ID: 35* - Adam
     - Threat Name: Potential Lack of Input Validation for 1.0 Bitwarden Desktop Application
     - Justification: The application enforces user input validation and sanitization.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: BitWarden currently [signs](https://github.com/DoctorEww/software-assurance/blob/main/Utility/Signed.jpg) all distributions.
+    - Notable Gap: None
 
   - *Threat ID: 38*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
-    - Justification: 	Coding best practices utilized
+    - Justification: Coding best practices utilized
     - Existing Mitigations:
     - Notable Gap:
     
