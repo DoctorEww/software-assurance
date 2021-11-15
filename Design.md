@@ -65,19 +65,19 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations: BitWarden currently trusts all file system operations; **no mitigation exists.**
     - Notable Gap: *BitWarden does not check incoming data from the file system for potential malicious input.*
 
-  - *Threat ID: 11*
+  - *Threat ID: 11* - Chris
     - Threat Name: Spoofing of the BitWarden API External Destination Entity (CL)
     - Justification: Use of digital certificates ensures proper authentication
     - Existing Mitigations: Bitwarden uses Microsoft Azure manager to ensure that security is maintained as well as implementing one-way salted hashing measures
     - Notable Gap: None
 
-  - *Threat ID: 14*
+  - *Threat ID: 14* - Chris
     - Threat Name: 1.0 Bitwarden Desktop Application may be able to impersonate the context of BitWarden API in order to gain additional privilege. (CL)
     - Justification: Authentication is required in order to gain additional privilege
     - Existing Mitigations: Bitwarden implements HTTP Strict Transport Security and forces all connections to use TLS.
     - Notable Gap: None
 
-  - *Threat ID: 16*
+  - *Threat ID: 16* - ?
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
     - Threat Justification: No logs or dumps produced following an application crash.
     - Existing Mitigations: There are no handlers or means for sensitive data to be leaked or logged on crash.
@@ -107,7 +107,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations:
     - Notable Gap:
 
-  - *Threat ID: 21*
+  - *Threat ID: 21* - Chris
     - Threat Name: Risks from Logging (CL)
     - Justification: Logs do not contain sensitive information
     - Existing Mitigations: The logs only contain a minimal amount of information that includes mainly unique IDs, timestamps, and ipaddresses.
