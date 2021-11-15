@@ -11,11 +11,11 @@
 1. [BitWarden DFD](https://github.com/DoctorEww/software-assurance/blob/main/Design/readme.md)
 2. [Threat Modeling Report](https://htmlpreview.github.io/?https://github.com/DoctorEww/software-assurance/blob/main/Design/BitWarden_Report.html)
 
-### 1. Introduction
+### 2. Introduction
 
 In effort to best mitigate the highest impact threats, all automaitcally generated threats evaluated in review with a High priority were divided among the team and assessed for existing mitigations in the current BitWarden implementation. During individual threat review: (1) the threat is identified, (2) a justification for the mitigation of the threat is established, (3) existing, *implemented* mitigations are documented, and (4) notable gaps in identified threats and existing mitigations are highlighted. 
 
-### 2. Individual Threat Review
+### 3. Individual Threat Review
     
   - *Threat ID: 1*
     - Threat Name:  Spoofing of Source Data Store File System
@@ -203,7 +203,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input. User input is never executed.
     - Notable Gap: **While user input is scrubbed, the validation process is not *explicit*. Due to a simple lack of clarity, flaws could exist.**
   
-### 3. Design Observations Summary
+### 4. Design Observations Summary
 
 By outlining the overall data flow of the 1.0 BitWarden Desktop Application and identifying potential trust boundaries, automatic threat generation revealed a number of potential security threats. In general, the 1.0 BitWarden Desktop Application facilitates the transfer of data between two (2) External Interactors (EI) and one (1) Data Store (DS). Information is relayed to and from the application by the following EIs: (1) the user, and (2) the online BitWarden API. A single, local DS is located on the file system of the local computer.
 
@@ -224,7 +224,7 @@ From these 30 established, high priority threats, mitigations were formulated an
 7. BDA appears to provide user input and sanitization, yet the process is unclear. 
 
 
-### 4. Reflection
+### 5. Reflection
 
 Working through the initial phases of this portion of the project proved slightly difficult due to the tendency to over complicate the Data Flow Diagrams. Upon meeting with Dr. Gandhi, however, the team grasped the essence of what information our DFD(s) are supposed to convey. We quickly reoriented, reestablished a Level 0 DFD for the overall application, and realized that most data flow in the program flowed through the UI to the BitWarden Online API. A limited number of local memory interactions added a single data store and pushed us to a Level 1 diagram. The team decided that further granularity was not necessary.
 
