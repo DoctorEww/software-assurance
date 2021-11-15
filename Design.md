@@ -11,11 +11,11 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
 
 **2. Individual Threat Review**
     
-  - *Threat ID: 1*
+  - *Threat ID: 1* - Adam
     - Threat Name:  Spoofing of Source Data Store File System
-    - Justification: All returning data is signed.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Justification: All returning data is signed and authenticated.
+    - Existing Mitigations: All synchronizations to and from the BitWarden server are *carefully* and *consistently* [authenticated](https://github.com/bitwarden/jslib/blob/8f177e2d3a879b854db5c6e6d7d386b24d637a66/common/src/services/sync.service.ts#L288) and the codebase is [signed](https://github.com/DoctorEww/software-assurance/blob/main/Utility/Signed.jpg).
+    - Notable Gap: None
 
   - *Threat ID: 2* - Adam
     - Threat Name: Risks from Logging
