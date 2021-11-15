@@ -177,7 +177,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Threat Name: Potential Lack of Input Validation for 1.0 Bitwarden Desktop Application
     - Justification: The application enforces user input validation and sanitization.
     - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input. User input is never executed.
-    - Notable Gap: While user input is scrubbed, the validation process is not *explicit*. Due to a simple lack of clarity, flaws could exist.
+    - Notable Gap: **While user input is scrubbed, the validation process is not *explicit*. Due to a simple lack of clarity, flaws could exist.**
 
   - *Threat ID: 38*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
