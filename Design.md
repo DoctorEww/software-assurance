@@ -27,7 +27,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Threat Name: Weak Access Control for a Resource
     - Justification: BitWarden Desktop Application only has permissions to read it's own file space.
     - Existing Mitigations: BitWarden runs as a user process which has permissions to read and write all user files.
-    - Notable Gap: **BitWarden has permissions to read and write files it does not need to**
+    - Notable Gap: **BitWarden has elevated permissions to read and write files; these permissions are unnecessary**
  
   - *Threat ID: 5*
     - Threat Name: Potential Data Repudiation by 1.0 Bitwarden Desktop Application
