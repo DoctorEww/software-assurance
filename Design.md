@@ -205,7 +205,7 @@ With these entities in mind, trust boundaries were established between the User 
 
 From these 30 established, high priority threats, mitigations were formulated and justified. From these justifications, the actual 1.0 BitWarden Desktop Application was canvassed for comparative flaws. While the existing 1.0 BitWarden Desktop Application generally ensures authentication and encryption security, there are a number of gaps that became evident throughout the analysis. 
 
-Notable Gaps:
+**3.1 Notable Gaps:**
 1. BitWarden Desktop Application (BDA) exhibits a strict requirement that the file system be accessible. 
     - Should the file system be unavailable, BDA fails to function.
 2. In conjunction with the gap above, BDA relies on the file system *without* performing any file system input validation or sanitization.
