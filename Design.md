@@ -140,7 +140,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 28*
     - Threat Name: The File System Data Store Could Be Corrupted
     - Justification: No sensitive data stored; risk accepted
-    - Existing Mitigations: The application crashes if the files are corrupted.
+    - Existing Mitigations: The application [crashes](https://github.com/DoctorEww/software-assurance/blob/main/Utility/corrupted_file.PNG) if the files are corrupted.
     - Notable Gap: **BitWarden crashes when files are corrupted**
 
   - *Threat ID: 29*
