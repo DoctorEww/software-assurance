@@ -104,7 +104,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 20*
     - Threat Name: Spoofing of Destination Data Store File System
     - Justification: Nothing sensitive is written to the file system. File system requires user level authentication on the system.
-    - Existing Mitigations: The logs written contain only a minimal amount of information. It's composed of mostly unique IDs, timestamps, and IPs. The file system requires the system defined user trust level.
+    - Existing Mitigations: The logs written contain only a minimal amount of [information](). It's composed of mostly unique IDs, timestamps, and IPs. The file system requires the system defined user trust level.
     - Notable Gap: None.
 
   - *Threat ID: 21*
