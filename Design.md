@@ -1,6 +1,6 @@
 ### Contents
 
-1. [Data Flow Diagram and Threat Modeling](#DFD)
+1. [Data Flow Diagram and Threat Modeling](#Data-Flow-Diagram-and-Threat-Modeling)
 2. [Introduction]()
 3. [Individual Threat Review]()
 4. [Design Observations Summary]()
