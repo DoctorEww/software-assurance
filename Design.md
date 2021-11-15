@@ -32,26 +32,26 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 5*
     - Threat Name: Potential Data Repudiation by 1.0 Bitwarden Desktop Application
     - Justification: In the event of non-readable files, new files are written.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: BitWarden replaces non-existing files, tampered files throw a crash.
+    - Notable Gap: *BitWarden crashes when local files are tampered with*
 
   - *Threat ID: 6*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
     - Justification: Coding best practices utilized.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: In the event of a crash BitWarden relaunches the application.
+    - Notable Gap: None
   
   - *Threat ID: 7*
     - Threat Name: Data Flow Application Data Is Potentially Interrupted
     - Justification: Application functions without the explicit need for the file system
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: Application recreates files that are missing
+    - Notable Gap: *BitWarden needs the file system to function*
 
   - *Threat ID: 8*
     - Threat Name: Data Store Inaccessible
     - Justification: Application functions without the explicit need for the file system
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: Application recreates files that are missing
+    - Notable Gap: *BitWarden needs the file system to function*
 
   - *Threat ID: 9* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
@@ -158,14 +158,14 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 31*
     - Threat Name: Data Flow User Data Is Potentially Interrupted
     - Justification: An operating System error event is created. Application can function without the file system.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: Application recreates files that are missing
+    - Notable Gap: *BitWarden needs the file system to function*
 
   - *Threat ID: 32*
     - Threat Name: Data Store Inaccessible
     - Justification: Application can function without the explicit use of the file system
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: Application recreates files that are missing
+    - Notable Gap: *BitWarden needs the file system to function*
 
   - *Threat ID: 34* - Adam
     - Threat Name: Spoofing the 1.0 Bitwarden Desktop Application Process
@@ -182,8 +182,8 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 38*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
     - Justification: Coding best practices utilized
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: In the event of a crash BitWarden relaunches the application.
+    - Notable Gap: None
     
   - *Threat ID: 40* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
