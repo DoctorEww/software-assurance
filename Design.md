@@ -86,8 +86,8 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 17*
     - Threat Name: Data Flow Encrypted Response Is Potentially Interrupted
     - Justification: Rerequest data
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: BitWarden implements the JSLib function [async/await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) combination to ensure the request is fulfilled with acceptable promises. Should responses be delayed, the await function will suspend execution until the returned promise is fulfilled or rejected.
+    - Notable Gap: None
 
   - *Threat ID: 18*
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
