@@ -182,8 +182,8 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 38*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
     - Justification: Coding best practices utilized
-    - Existing Mitigations: BitWarden crashes throwing an error message.
-    - Notable Gap: *BitWarden does not handle crashes*
+    - Existing Mitigations: BitWarden crashes throwing an [error message](https://github.com/DoctorEww/software-assurance/blob/main/Utility/invalid_permissions.PNG).
+    - Notable Gap: **BitWarden does not gracefully handle crashes**
     
   - *Threat ID: 40*
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
