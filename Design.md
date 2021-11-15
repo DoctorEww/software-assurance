@@ -188,14 +188,14 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 40* - Adam
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
     - Justification: Input validation and sanitization is implemented to ensure clean input.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input.
+    - Notable Gap: While user input is scrubbed, the validation process is not *explicit*. Due to a simple lack of clarity, flaws could exist.
 
   - *Threat ID: 41* - Adam
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
     - Justification: Input validation and sanitization is used to sterilize all incoming data.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input.
+    - Notable Gap: While user input is scrubbed, the validation process is not *explicit*. Due to a simple lack of clarity, flaws could exist.
   
 **3. Design Observations Summary**
 
