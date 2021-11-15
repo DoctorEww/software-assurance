@@ -32,37 +32,37 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 5*
     - Threat Name: Potential Data Repudiation by 1.0 Bitwarden Desktop Application
     - Justification: In the event of non-readable files, new files are written.
-    - Existing Mitigations: BitWarden replaces non-existing files, tampered files throw a crash.
+    - Existing Mitigations: BitWarden replaces non-existing files. Files that have been [tampered with](https://github.com/DoctorEww/software-assurance/blob/main/Utility/corrupted_file.PNG) cause a crash.
     - Notable Gap: **BitWarden crashes when local files are tampered with.**
 
   - *Threat ID: 6*
     - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
     - Justification: Coding best practices utilized.
-    - Existing Mitigations: BitWarden crashes throwing an error message.
-    - Notable Gap: *BitWarden does not handle crashes*
+    - Existing Mitigations: BitWarden [crashes](https://github.com/DoctorEww/software-assurance/blob/main/Utility/corrupted_file.PNG) throwing an error message.
+    - Notable Gap: **BitWarden does not crash gracefully**
   
   - *Threat ID: 7*
     - Threat Name: Data Flow Application Data Is Potentially Interrupted
     - Justification: Application functions without the explicit need for the file system
     - Existing Mitigations: Application recreates files that are missing
-    - Notable Gap: **BitWarden requires the file system to function correctly.**
+    - Notable Gap: **BitWarden *requires* the file system to function correctly.**
 
   - *Threat ID: 8*
     - Threat Name: Data Store Inaccessible
     - Justification: Application functions without the explicit need for the file system
     - Existing Mitigations: Application recreates files that are missing
-    - Notable Gap: **BitWarden requires the file system to function correctly.**
+    - Notable Gap: **BitWarden *requires* the file system to function correctly.**
  
   - *Threat ID: 9*
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
     - Justification: Input validation and sanitization is used to disallow local code execution.
-    - Existing Mitigations: BitWarden currently trusts all file system operations; **no mitigation exists.**
+    - Existing Mitigations: BitWarden currently trusts all file system operations;
     - Notable Gap: **BitWarden does not check incoming data from the file system for potential malicious input.**
 
   - *Threat ID: 10*
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
     - Justification: Input validation and sanitization is used to ensure data is sanitized before entering the program flow.
-    - Existing Mitigations: BitWarden currently trusts all file system operations; **no mitigation exists.**
+    - Existing Mitigations: BitWarden currently trusts all file system operations;
     - Notable Gap: **BitWarden does not check incoming data from the file system for potential malicious input.**
 
   - *Threat ID: 11*
