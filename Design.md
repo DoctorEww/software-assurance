@@ -32,10 +32,10 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Existing Mitigations:
     - Notable Gap:
   - *Threat ID: 16*
-    - Threat Name:
-    - Threat Justification:
-    - Existing Mitigations:
-    - Notable Gap:
+    - Threat Name: Potential Process Crash or Stop for 1.0 Bitwarden Desktop Application
+    - Threat Justification: No logs or dumps produced following an application crash.
+    - Existing Mitigations: There are no handlers or means for sensitive data to be leaked or logged on crash.
+    - Notable Gap: None.
   - *Threat ID: 17*
     - Threat Name:
     - Threat Justification:
