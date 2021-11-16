@@ -13,7 +13,7 @@
 
 ### 2. Introduction
 
-In effort to best mitigate the highest impact threats, all automaitcally generated threats evaluated in review with a High priority were divided among the team and assessed for existing mitigations in the current BitWarden implementation. During individual threat review: (1) the threat is identified, (2) a justification for the mitigation of the threat is established, (3) existing, *implemented* mitigations are documented, and (4) notable gaps in identified threats and existing mitigations are highlighted. 
+In effort to best mitigate the highest impact threats, all automatically generated threats evaluated in review with a high priority were divided among the team and assessed for existing mitigations in the current BitWarden implementation. During individual threat review: (1) the threat is identified, (2) a justification for the mitigation of the threat is established, (3) existing, *implemented* mitigations are documented, and (4) notable gaps in identified threats and existing mitigations are highlighted. 
 
 ### 3. Individual Threat Review
     
@@ -31,7 +31,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     
   - *Threat ID: 3*
     - Threat Name: Weak Access Control for a Resource
-    - Justification: BitWarden Desktop Application only has permissions to read it's own file space.
+    - Justification: BitWarden Desktop Application only has permissions to read its own file space.
     - Existing Mitigations: BitWarden runs as a user process which has permissions to read and write all user files.
     - Notable Gap: **BitWarden has elevated permissions to read and write files; these permissions are unnecessary.**
  
@@ -91,20 +91,20 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
 
   - *Threat ID: 17*
     - Threat Name: Data Flow Encrypted Response Is Potentially Interrupted
-    - Justification: Rerequest data
+    - Justification: Re-request data
     - Existing Mitigations: BitWarden implements the JSLib function [async/await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) combination to ensure the request is fulfilled with acceptable promises. Should responses be delayed, the await function will suspend execution until the returned promise is fulfilled or rejected.
     - Notable Gap: None
 
   - *Threat ID: 18*
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
-    - Justification: Input sanitization and valildation is used to sanitize all input coming from remote sources.
+    - Justification: Input sanitization and validation is used to sanitize all input coming from remote sources.
     - Existing Mitigations: While synchronizations to and from the BitWarden server are *carefully* and *consistently* [authenticated](https://github.com/bitwarden/jslib/blob/8f177e2d3a879b854db5c6e6d7d386b24d637a66/common/src/services/sync.service.ts#L288), the codebase is [signed](https://github.com/DoctorEww/software-assurance/blob/main/Utility/Signed.jpg) to ensure tampering is minimized, and Azure [upload sanitization](https://github.com/bitwarden/jslib/blob/8f177e2d3a879b854db5c6e6d7d386b24d637a66/common/src/services/azureFileUpload.service.ts) is used to put information on the server, it appears the BitWarden assumes data *returning* from the server is trustworthy. The only exhibition of server data validation occurs when a [vault timeout](https://github.com/bitwarden/jslib/blob/32774561f37bdcf9abb80276c5d1958b7ec192de/angular/src/components/settings/vault-timeout-input.component.ts) occurs.
     - Notable Gap: **All data going to the server is trustworthy and the codebase is signed, but direct downloads aren't sanitized.**
 
   - *Threat ID: 19*
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
     - Justification: Input validation and sanitization is used to ensure all code entering the application is scrubbed.
-    - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input.
+    - Existing Mitigations: BitWarden uses a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via JSLib to validate input.
     - Notable Gap: **While user input is scrubbed, the validation process is not explicit, thus, due to a lack of clarity, flaws could exist.**
 
   - *Threat ID: 20*
@@ -116,7 +116,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 21*
     - Threat Name: Risks from Logging
     - Justification: Logs do not contain sensitive information
-    - Existing Mitigations: The logs only contain a minimal amount of [information](https://github.com/DoctorEww/software-assurance/blob/main/Utility/log.jpg) that includes mainly unique IDs, timestamps, and ipaddresses.
+    - Existing Mitigations: The logs only contain a minimal amount of [information](https://github.com/DoctorEww/software-assurance/blob/main/Utility/log.jpg) that includes mainly unique IDs, timestamps, and IP addresses.
     - Notable Gap: None
 
   - *Threat ID: 22*
@@ -128,13 +128,13 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 23*
     - Threat Name: Data Logs from an Unknown Source
     - Justification: Logging adheres to system defined user trust levels.
-    - Existing Mitigations: Logged data fields are limited to system and application id's. Outside input beyond IP addresses are not stored in logs. 
+    - Existing Mitigations: Logged data fields are limited to system and application ID's. Outside input beyond IP addresses are not stored in logs. 
     - Notable Gap: None.
 
   - *Threat ID: 25*
     - Threat Name: Potential Weak Protections for Audit Data
     - Justification: No sensitive information stored in the local logs.
-    - Existing Mitigations: Logs are not application readable. In order to read logs the user must locate them and access them with a utility. Bitwarden does not extend any protections to the logs beyond the given system R/W protections.
+    - Existing Mitigations: Logs are not application readable. In order to read logs, the user must locate them and access them with a utility. Bitwarden does not extend any protections to the logs beyond the given system R/W protections.
     - Notable Gap: **No log protections beyond limited Read/Write control.** 
 
   - *Threat ID: 26*
@@ -158,7 +158,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 30*
     - Threat Name: Data Flow Sniffing
     - Justification: No sensitive data is stored locally.
-    - Existing Mitigations: All traffic to and from Bitwarden Desktop across a sniffable vector is encrypted with a industry standard symmetric suite. Key exchanges are also handled utilizing current best practices.
+    - Existing Mitigations: All traffic to and from Bitwarden Desktop across a sniff-able vector is encrypted with an industry standard symmetric suite. Key exchanges are also handled utilizing current best practices.
     - Notable Gap: None.
 
   - *Threat ID: 31*
@@ -182,7 +182,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 35*
     - Threat Name: Potential Lack of Input Validation for 1.0 Bitwarden Desktop Application
     - Justification: The application enforces user input validation and sanitization.
-    - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input. User input is never executed.
+    - Existing Mitigations: BitWarden uses a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via JSLib to validate input. User input is never executed.
     - Notable Gap: **While user input is scrubbed, the validation process is not *explicit*. Due to a simple lack of clarity, flaws could exist.**
 
   - *Threat ID: 38*
@@ -194,20 +194,20 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 40*
     - Threat Name: 1.0 Bitwarden Desktop Application May be Subject to Elevation of Privilege Using Remote Code Execution
     - Justification: Input validation and sanitization is implemented to ensure clean input.
-    - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input. User input is never executed.
+    - Existing Mitigations: BitWarden uses a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via JSLib to validate input. User input is never executed.
     - Notable Gap: **While user input is scrubbed, the validation process is not *explicit*. Due to a simple lack of clarity, flaws could exist.**
 
   - *Threat ID: 41*
     - Threat Name: Elevation by Changing the Execution Flow in 1.0 Bitwarden Desktop Application
     - Justification: Input validation and sanitization is used to sterilize all incoming data.
-    - Existing Mitigations: BitWarden uses the a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via jslib to validate input. User input is never executed.
+    - Existing Mitigations: BitWarden uses a [validation Service](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts) via JSLib to validate input. User input is never executed.
     - Notable Gap: **While user input is scrubbed, the validation process is not *explicit*. Due to a simple lack of clarity, flaws could exist.**
   
 ### 4. Design Observations Summary
 
 By outlining the overall data flow of the 1.0 BitWarden Desktop Application and identifying potential trust boundaries, automatic threat generation revealed a number of potential security threats. In general, the 1.0 BitWarden Desktop Application facilitates the transfer of data between two (2) External Interactors (EI) and one (1) Data Store (DS). Information is relayed to and from the application by the following EIs: (1) the user, and (2) the online BitWarden API. A single, local DS is located on the file system of the local computer.
 
-With these entities in mind, trust boundaries were established between the User and the 1.0 BitWarden Desktop Application, the 1.0 BitWarden Desktop Application and the external BitWarden API, and the 1.0 BitWarden Desktop Application and the local File System. From these trust boundaries, the Microsoft Threat Modeling tool recognized a large number automatically generated threats. From these threats, 30 were evaluated by the team as *High Priority*.
+With these entities in mind, trust boundaries were established between the User and the 1.0 BitWarden Desktop Application, the 1.0 BitWarden Desktop Application and the external BitWarden API, and the 1.0 BitWarden Desktop Application and the local File System. From these trust boundaries, the Microsoft Threat Modeling tool recognized a large number of automatically generated threats. From these threats, 30 were evaluated by the team as *High Priority*.
 
 From these 30 established, high priority threats, mitigations were formulated and justified. From these justifications, the actual 1.0 BitWarden Desktop Application was canvassed for comparative flaws. While the existing 1.0 BitWarden Desktop Application generally ensures authentication and encryption security, there are a number of gaps that became evident throughout the analysis. 
 
@@ -228,6 +228,6 @@ From these 30 established, high priority threats, mitigations were formulated an
 
 Working through the initial phases of this portion of the project proved slightly difficult due to the tendency to over complicate the Data Flow Diagrams. Upon meeting with Dr. Gandhi, however, the team grasped the essence of what information our DFD(s) are supposed to convey. We quickly reoriented, reestablished a Level 0 DFD for the overall application, and realized that most data flow in the program flowed through the UI to the BitWarden Online API. A limited number of local memory interactions added a single data store and pushed us to a Level 1 diagram. The team decided that further granularity was not necessary.
 
-Upon the completion of the diagram, we were able to address all automatically identified threats and chose to have each member choose at least three of the high level threats for investigation. Each member posted their chosen threats to our project board in order to avoid replication of work, and pertinent details were evaluated and documented during OSS review.
+Upon the completion of the diagram, we were able to address all automatically identified threats and chose to have each member choose at least three of the high-level threats for investigation. Each member posted their chosen threats to our project board to avoid replication of work, and pertinent details were evaluated and documented during OSS review.
 
 The team continues to function well together. At this point in the semester, the roles are becoming well defined, and the processes supporting the execution of each section of the project are now well established. Each team member is adding valuable insight to the project and carrying out required responsibilities quickly and efficiently.
