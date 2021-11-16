@@ -135,7 +135,7 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
     - Threat Name: Potential Weak Protections for Audit Data
     - Justification: No sensitive information stored in the local logs.
     - Existing Mitigations: Logs are not application readable. In order to read logs the user must locate them and access them with a utility. Bitwarden does not extend any protections to the logs beyond the given system R/W protections.
-    - Notable Gap: No log protections beyond limited Read/Write control. 
+    - Notable Gap: **No log protections beyond limited Read/Write control.** 
 
   - *Threat ID: 26*
     - Threat Name: Authorization Bypass
