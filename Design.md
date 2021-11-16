@@ -122,20 +122,20 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 22*
     - Threat Name: Lower Trusted Subject Updates Logs 
     - Justification: Logging adheres to system defined user trust levels.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: Logging service runs at a user level and are stored under the user's profile protected by file permissions.
+    - Notable Gap: None.
 
   - *Threat ID: 23*
     - Threat Name: Data Logs from an Unknown Source
     - Justification: Logging adheres to system defined user trust levels.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: Logged data fields are limited to system and application id's. Outside input beyond IP addresses are not stored in logs. 
+    - Notable Gap: None.
 
   - *Threat ID: 25*
     - Threat Name: Potential Weak Protections for Audit Data
     - Justification: No sensitive information stored in the local logs.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: Logs are not application readable. In order to read logs the user must locate them and access them with a utility. Bitwarden does not extend any protections to the logs beyond the given system R/W protections.
+    - Notable Gap: No log protections beyond limited Read/Write control. 
 
   - *Threat ID: 26*
     - Threat Name: Authorization Bypass
@@ -158,8 +158,8 @@ In effort to best mitigate the highest impact threats, all automaitcally generat
   - *Threat ID: 30*
     - Threat Name: Data Flow Sniffing
     - Justification: No sensitive data is stored locally.
-    - Existing Mitigations:
-    - Notable Gap:
+    - Existing Mitigations: All traffic to and from Bitwarden Desktop across a sniffable vector is encrypted with a industry standard symmetric suite. Key exchanges are also handled utilizing current best practices.
+    - Notable Gap: None.
 
   - *Threat ID: 31*
     - Threat Name: Data Flow User Data Is Potentially Interrupted
