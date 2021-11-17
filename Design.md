@@ -231,3 +231,5 @@ Working through the initial phases of this portion of the project proved slightl
 Upon the completion of the diagram, we were able to address all automatically identified threats and chose to have each member choose at least three of the high-level threats for investigation. Each member posted their chosen threats to our project board to avoid replication of work, and pertinent details were evaluated and documented during OSS review.
 
 The team continues to function well together. At this point in the semester, the roles are becoming well defined, and the processes supporting the execution of each section of the project are now well established. Each team member is adding valuable insight to the project and carrying out required responsibilities quickly and efficiently.
+
+[Project Collaboration Link](https://github.com/DoctorEww/software-assurance/projects/6)
