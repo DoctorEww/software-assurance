@@ -1,10 +1,11 @@
 ### i. Contents
 
 1. [Data Flow Diagram and Threat Modeling](#1-Data-Flow-Diagram-and-Threat-Modeling)
-3. [Introduction](#2-Introduction)
-4. [Individual Threat Review](#3-Individual-Threat-Review)
-5. [Design Observations Summary](#4-Design-Observations-Summary)
-6. [Reflection](#5-Reflection)
+2. [Introduction](#2-Introduction)
+3. [Individual Threat Review](#3-Individual-Threat-Review)
+4. [Design Observations Summary](#4-Design-Observations-Summary)
+5. [Reflection](#5-Reflection)
+6. [Project Collaboration](#6-Collaboration)
 
 ### 1. Data Flow Diagram and Threat Modeling
 
@@ -211,7 +212,7 @@ With these entities in mind, trust boundaries were established between the User 
 
 From these 30 established, high priority threats, mitigations were formulated and justified. From these justifications, the actual 1.0 BitWarden Desktop Application was canvassed for comparative flaws. While the existing 1.0 BitWarden Desktop Application generally ensures authentication and encryption security, there are a number of gaps that became evident throughout the analysis. 
 
-### 3.1 Notable Gaps:
+### 4.1 Notable Gaps:
 1. BitWarden Desktop Application (BDA) exhibits a strict requirement that the file system be accessible. 
     - Should the file system be unavailable, BDA fails to function.
 2. In conjunction with the gap above, BDA relies on the file system *without* performing any file system input validation or sanitization.
@@ -231,5 +232,7 @@ Working through the initial phases of this portion of the project proved slightl
 Upon the completion of the diagram, we were able to address all automatically identified threats and chose to have each member choose at least three of the high-level threats for investigation. Each member posted their chosen threats to our project board to avoid replication of work, and pertinent details were evaluated and documented during OSS review.
 
 The team continues to function well together. At this point in the semester, the roles are becoming well defined, and the processes supporting the execution of each section of the project are now well established. Each team member is adding valuable insight to the project and carrying out required responsibilities quickly and efficiently.
+
+### 6. Collaboration
 
 [Project Collaboration Link](https://github.com/DoctorEww/software-assurance/projects/6)
