@@ -19,3 +19,5 @@ Part 2 - [Security Requirements](https://github.com/DoctorEww/software-assurance
 Part 3 - [Assurance Case Report](https://github.com/DoctorEww/software-assurance/blob/main/AssuranceCases.md)
 
 Part 4 - [Design for Software Security](https://github.com/DoctorEww/software-assurance/blob/main/Design.md)
+
+Part 5 - [Code Review Report](https://github.com/DoctorEww/software-assurance/blob/main/CodeReview.md)
