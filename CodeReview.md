@@ -9,8 +9,7 @@
 ### 1. Introduction
 
 As one of the most essential elements in Software Security Engineering, a dilligent effort must be made to verify the security of the source code used in any given 
-application. To accomplish this process, engineering efforts directed at code reivew must be formulated, outlined, and executed. This code review will carry out the 
-following objectives: 
+application. To accomplish this process, engineering efforts directed at code reivew must be formulated, outlined, and executed. The code review strategy proposed will incorporate the following elements: (1) automated code scanning tools will be used to scan the BitWarden Desktop Application for known code based weaknesses, (2) autoscan results will be checked via manual review, and (3) further manual review will be carried out in identified problem areas. Some notable targets for deeper manual code scanning include: (1) input validation and sanitization processes, (2) cryptographic operations, and (3) security documentation.
 
 ### 2. Code Review Strategy
 
