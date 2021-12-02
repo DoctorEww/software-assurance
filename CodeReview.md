@@ -17,16 +17,16 @@ The code review strategy for the BitWarden Desktop Application is proposed as fo
 
 ### 3. Selected Common Weakness Enumerations
 
-* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor]() - Adam
-* [CWE-261: Weak Encoding for Password]() - Drew
-* [CWE-326: Inadequate Encryption Strength (Code and Documentation)]() - Jensen
-* [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)]() - Drew
-* [CWE-347: Improper Verification of Cryptographic Signature]() - Jensen
-* [CWE-532: Insertion of Sensitive Information into Log File]() - Justin
-* [CWE-613: Insufficient Session Expiration]() - Chris
-* [CWE-732: Incorrect Permission Assignment for Critical Resource]() - Justin
-* [CWE-1286: Improper Validation of Syntactic Correctness of Input]() - Chris
-* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor]() - Adam
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html) - Adam
+* [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) - Drew
+* [CWE-326: Inadequate Encryption Strength (Code and Documentation)](https://cwe.mitre.org/data/definitions/326.html) - Jensen
+* [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html) - Drew
+* [CWE-347: Improper Verification of Cryptographic Signature](https://cwe.mitre.org/data/definitions/347.html) - Jensen
+* [CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html) - Justin
+* [CWE-613: Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html) - Chris
+* [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html) - Justin
+* [CWE-1286: Improper Validation of Syntactic Correctness of Input](https://cwe.mitre.org/data/definitions/1286.html) - Chris
+* [CWE-1288: Improper Validation of Consistency within Input](https://cwe.mitre.org/data/definitions/1288.html) - Adam
 
 ### 4. Code Review Outcomes
 
