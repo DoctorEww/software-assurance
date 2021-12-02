@@ -21,7 +21,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 
 3.1. Automated Scan Tools
 
-* Deepscan.io
+* [Deepscan.io](https://deepscan.io/)
 * Tool 2
 * Tool 3
 * Tool 4
@@ -34,20 +34,53 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
   * Code Review Summary: 
  
-* [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) - Drew
-* [CWE-326: Inadequate Encryption Strength (Code and Documentation)](https://cwe.mitre.org/data/definitions/326.html) - Jensen
-* [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html) - Drew
-* [CWE-347: Improper Verification of Cryptographic Signature](https://cwe.mitre.org/data/definitions/347.html) - Jensen
-* [CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html) - Justin
-* [CWE-613: Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html) - Chris
-* [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html) - Justin
-* [CWE-1286: Improper Validation of Syntactic Correctness of Input](https://cwe.mitre.org/data/definitions/1286.html) - Chris
-* [CWE-1288: Improper Validation of Consistency within Input](https://cwe.mitre.org/data/definitions/1288.html) - Adam
+* [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) - Drew 
+  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Code Review Summary: 
 
-### 4. Code Review Outcomes
+* [CWE-326: Inadequate Encryption Strength (Code and Documentation)](https://cwe.mitre.org/data/definitions/326.html) - Jensen 
+  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Code Review Summary: 
+ 
+* [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html) - Drew 
+  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Code Review Summary: 
+ 
+* [CWE-347: Improper Verification of Cryptographic Signature](https://cwe.mitre.org/data/definitions/347.html) - Jensen 
+  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Code Review Summary: 
+ 
+* [CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html) - Justin 
+  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Code Review Summary: 
+ 
+* [CWE-613: Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html) - Chris 
+  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Code Review Summary: 
+ 
+* [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html) - Justin 
+  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Code Review Summary: 
+ 
+* [CWE-1286: Improper Validation of Syntactic Correctness of Input](https://cwe.mitre.org/data/definitions/1286.html) - Chris 
+  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Code Review Summary: 
+ 
+* [CWE-1288: Improper Validation of Consistency within Input](https://cwe.mitre.org/data/definitions/1288.html) - Adam 
+  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Code Review Summary: 
 
-### 5. Summary
+### 4. Summary
 
-### 6. OSS Contributions
+### 5. OSS Contributions
 
-### 7. Reflection
+### 6. Reflection
