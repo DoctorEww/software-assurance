@@ -17,7 +17,11 @@ The code review strategy for the BitWarden Desktop Application is proposed as fo
 
 ### 3. Selected Common Weakness Enumerations
 
-* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html) - Adam
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html) - Adam 
+  * Files Analyzed: 
+  * Automated Scan Issues:
+  * Code Review Summary: 
+ 
 * [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) - Drew
 * [CWE-326: Inadequate Encryption Strength (Code and Documentation)](https://cwe.mitre.org/data/definitions/326.html) - Jensen
 * [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html) - Drew
