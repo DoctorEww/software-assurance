@@ -17,26 +17,16 @@ The code review strategy for the BitWarden Desktop Application is proposed as fo
 
 ### 3. Selected Common Weakness Enumerations
 
-* [CWE]()
-* [CWE]()
-* [CWE]()
-* [CWE]()
-* [CWE]()
-* [CWE]()
-* [CWE]()
-* [CWE]()
-* [CWE]()
-* [CWE]()
-
-NOTE: Potentials
-* CWE-306: Missing Authentication for Critical Function
-* CWE-862: Missing Authorization
-* CWE-287: Improper Authentication
-* CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
-* CWE-522: Insufficiently Protected Credentials
-* CWE-732: Incorrect Permission Assignment for Critical Resource
-* CWE-20: Improper Input Validation
-* CWE-75: Failure to Sanitize Special Elements into a Different Plane (Special Element Injection)
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor]() - Adam
+* [CWE-261: Weak Encoding for Password]() - Drew
+* [CWE-326: Inadequate Encryption Strength (Code and Documentation)]() - Jensen
+* [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)]() - Drew
+* [CWE-347: Improper Verification of Cryptographic Signature]() - Jensen
+* [CWE-532: Insertion of Sensitive Information into Log File]() - Justin
+* [CWE-613: Insufficient Session Expiration]() - Chris
+* [CWE-732: Incorrect Permission Assignment for Critical Resource]() - Justin
+* [CWE-1286: Improper Validation of Syntactic Correctness of Input]() - Chris
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor]() - Adam
 
 ### 4. Code Review Outcomes
 
