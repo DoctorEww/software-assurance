@@ -13,7 +13,7 @@ application. To accomplish this process, engineering efforts directed at code re
 
 ### 2. Code Review Strategy
 
-The code review strategy proposed will incorporate the following elements: (1) automated code scanning tools will be used to scan the BitWarden Desktop Application for known code based weaknesses, (2) autoscan results will be checked via manual review, and (3) further manual review will be carried out in identified problem areas. Some notable targets for deeper manual code scanning include: (1) input validation and sanitization processes, (2) cryptographic operations, and (3) security documentation.
+The code review strategy for the BitWarden Desktop Application is proposed as follows: (1) a selection of [Common Weakness Enumerations](https://cwe.mitre.org/) (CWE) will be selected based on relevance to discovered weaknesses and flaws within the design of the OSS project (2) these CWEs will be delegated among the team members for individual, manual code review, (3) automated code checking will be employed on the OSS repository, (4) the selected CWEs will inform areas of concern within the automated scan results, and (5) the team will investigate areas of concern related to both the selected CWEs and the automated scan results. 
 
 ### 3. Code Review Outcomes
 
