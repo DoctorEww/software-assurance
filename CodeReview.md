@@ -17,14 +17,16 @@ The code review strategy for the BitWarden Desktop Application is proposed as fo
 
 ### 3. Selected Common Weakness Enumerations
 
-* CWE
-* CWE
-* CWE
-* CWE
-* CWE
-* CWE
-* CWE
-* CWE
+* [CWE]()
+* [CWE]()
+* [CWE]()
+* [CWE]()
+* [CWE]()
+* [CWE]()
+* [CWE]()
+* [CWE]()
+* [CWE]()
+* [CWE]()
 
 ### 4. Code Review Outcomes
 
