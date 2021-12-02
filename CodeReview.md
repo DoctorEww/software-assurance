@@ -15,11 +15,15 @@ application. To accomplish this process, engineering efforts directed at code re
 
 The code review strategy for the BitWarden Desktop Application is proposed as follows: (1) a selection of [Common Weakness Enumerations](https://cwe.mitre.org/) (CWE) will be selected based on their relevance to discovered weaknesses and flaws within the design of the OSS project (2) these CWEs will be delegated among the team members for individual, manual code review, (3) automated code checking will be employed on the OSS repository, (4) the selected CWEs will inform areas of concern within the automated scan results, and (5) the team will investigate areas of concern related to both the selected CWEs and the automated scan results. 
 
+### 3. Automated Scan Tools
+
+The automated scan strategy employed in this project is as follows: (1) each team member uses a distinct automated scan tool, (2) automated scan results are posted to the *automated scan* directory, (3) during CWE code evaluation, each member checks all automated scan results for correlation to the CWE under review. Any issues found within an automated scan that correlate to a CWE below will be evaluted in section 3.
+
 ### 3. Selected Common Weakness Enumerations
 
 * [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html) - Adam 
-  * Files Analyzed: 
-  * Automated Scan Issues:
+  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
   * Code Review Summary: 
  
 * [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) - Drew
