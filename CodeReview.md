@@ -28,6 +28,16 @@ The code review strategy for the BitWarden Desktop Application is proposed as fo
 * [CWE]()
 * [CWE]()
 
+NOTE: Potentials
+* CWE-306: Missing Authentication for Critical Function
+* CWE-862: Missing Authorization
+* CWE-287: Improper Authentication
+* CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
+* CWE-522: Insufficiently Protected Credentials
+* CWE-732: Incorrect Permission Assignment for Critical Resource
+* CWE-20: Improper Input Validation
+* CWE-75: Failure to Sanitize Special Elements into a Different Plane (Special Element Injection)
+
 ### 4. Code Review Outcomes
 
 ### 5. Summary
