@@ -46,12 +46,12 @@ The automated scan strategy employed in this project is as follows: (1) each tea
  
 * [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) - Drew 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
   * Code Review Summary: 
 
 * [CWE-326: Inadequate Encryption Strength (Code and Documentation)](https://cwe.mitre.org/data/definitions/326.html) - Jensen 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
   * Code Review Summary: 
  
 * [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html) - Drew 
