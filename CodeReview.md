@@ -21,11 +21,21 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 
 3.1. Automated Scan Tools
 
-* [Deepscan.io](https://deepscan.io/)
-* [LGTM](https://lgtm.com/)
+* Deepscan.io
+  * [Deeptscan Site](https://deepscan.io/)
+  * [Results]()
+* LGTM (Looks Good To Me)
+  * [LGTM Site](https://lgtm.com/)
+  * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/LGTM)
 * Tool 3
+  * [Tool 3 Site]()
+  * [Results]()
 * Tool 4
+  * [Tool 4 Site]()
+  * [Results]()
 * Tool 5
+  * [Tool 5 Site]()
+  * [Results]()
 
 ### 3. Selected Common Weakness Enumerations
 
