@@ -56,37 +56,37 @@ The automated scan strategy employed in this project is as follows: (1) each tea
  
 * [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html) - Drew 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
   * Code Review Summary: 
  
 * [CWE-347: Improper Verification of Cryptographic Signature](https://cwe.mitre.org/data/definitions/347.html) - Jensen 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
   * Code Review Summary: 
  
 * [CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html) - Justin 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
   * Code Review Summary: 
  
 * [CWE-613: Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html) - Chris 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
   * Code Review Summary: 
  
 * [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html) - Justin 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
   * Code Review Summary: 
  
 * [CWE-1286: Improper Validation of Syntactic Correctness of Input](https://cwe.mitre.org/data/definitions/1286.html) - Chris 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
   * Code Review Summary: 
  
 * [CWE-1288: Improper Validation of Consistency within Input](https://cwe.mitre.org/data/definitions/1288.html) - Adam 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io][url.to.scan] blah, blah, blah.
+  * Automated Scan Issues: No pertinent automated scan issues encountered.
   * Code Review Summary: 
 
 ### 4. Summary
