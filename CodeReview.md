@@ -40,17 +40,19 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 ### 3. Selected Common Weakness Enumerations
 
 * [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html) - Adam 
-  * Files Analyzed: 
-   * [Main Login Directory](https://github.com/bitwarden/desktop/tree/master/src/app/accounts)
-   * [login.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/login.component.html)
-   * [lock.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/lock.component.html)
-   * [view.component.html](https://github.com/bitwarden/desktop/blob/c385efdbd2f38149132ab1251c4f02bb088ac200/src/app/vault/view.component.html)
-   * [login.component.html](https://github.com/bitwarden/desktop/blob/master/src/app/accounts/login.component.html)
-  * Automated Scan Issues: No relateive automated scan issues encountered.
-  * Code Review Summary: The application, on the whole, minimizes any exposure of sensitive data to unauthroized data.
-   * During logging, very little sensitive data is logged.
-   * When an incorrect authentication attempt is made, the server response is as follows, "Username or password is incorrect. Try again." - Like [Here](upload pic) This response reveals no data about the error that occured in authentication.
-   * The only data revealed to unathorized users is the password of the user that last logged in. This potentially reveals a slight amount of personal data.
+  * **Files Analyzed:** 
+    * [Main Login Directory](https://github.com/bitwarden/desktop/tree/master/src/app/accounts)
+    * [login.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/login.component.html)
+    * [lock.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/lock.component.html)
+    * [view.component.html](https://github.com/bitwarden/desktop/blob/c385efdbd2f38149132ab1251c4f02bb088ac200/src/app/vault/view.component.html)
+    * [login.component.html](https://github.com/bitwarden/desktop/blob/master/src/app/accounts/login.component.html)
+
+  * **Automated Scan Issues:** No relateive automated scan issues encountered.
+
+  * **Code Review Summary:** The application minimizes any exposure of sensitive data to unauthroized users.
+    * During logging, very little sensitive data is logged.
+    * When an incorrect authentication attempt is made, the server response is as follows, "Username or password is incorrect. Try again." - Link [Here](https://github.com/DoctorEww/software-assurance/blob/main/Utility/BadAuth.jpg) This response reveals no data about the error that occured in authentication.
+    * The only data revealed to unathorized users is the password of the user that last logged in. This potentially reveals a slight amount of personal data.
  
 * [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) - Drew 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
