@@ -50,8 +50,8 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * **Automated Scan Issues:** No relateive automated scan issues encountered.
 
   * **Code Review Summary:** The application minimizes any exposure of sensitive data to unauthroized users.
-    * During logging, very little sensitive data is logged.
-    * When an incorrect authentication attempt is made, the server response is as follows, "Username or password is incorrect. Try again." - Link [Here](https://github.com/DoctorEww/software-assurance/blob/main/Utility/BadAuth.jpg) This response reveals no data about the error that occured in authentication.
+    * During [logging](https://github.com/DoctorEww/software-assurance/blob/main/Utility/log.jpg), very little sensitive data is logged.
+    * When an incorrect authentication attempt is made, the server response is as follows, "Username or password is incorrect. Try again." - [Response Link](https://github.com/DoctorEww/software-assurance/blob/main/Utility/BadAuth.jpg) This response reveals no data about the error that occured in authentication.
     * The only data revealed to unathorized users is the password of the user that last logged in. This potentially reveals a slight amount of personal data.
  
 * [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) - Drew 
