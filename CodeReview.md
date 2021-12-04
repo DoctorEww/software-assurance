@@ -95,7 +95,8 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * Code Review Summary: 
  
 * [CWE-1288: Improper Validation of Consistency within Input](https://cwe.mitre.org/data/definitions/1288.html) - Adam 
-  * **Files Analyzed:** [validation.service.ts](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts)
+  * **Files Analyzed:** 
+    * [validation.service.ts](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts)
 
   * **Automated Scan Issues:** No pertinent automated scan issues encountered.
 
