@@ -101,7 +101,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * **Automated Scan Issues:** No pertinent automated scan issues encountered.
 
   * **Code Review Summary:** BitWarden currently allows all types of input, yet executes none.
-    * While this represenets a security flaw, NO input is ever executed.  
+    * While ALL input is allow, both inconsistent and containing special characters, not user input is executed via server calls. The BitWarden Desktop Application simply stores a large number of strings and ensures that none of the strings stored are ever exectued.
 
 ### 4. Summary
 
