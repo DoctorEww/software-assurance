@@ -27,8 +27,8 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 * LGTM (Looks Good To Me)
   * [LGTM Site](https://lgtm.com/)
   * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/LGTM)
-* Tool 3
-  * [Tool 3 Site]()
+* Embold - Chris
+  * [Embold](https://app.embold.io/)
   * [Results]()
 * Tool 4
   * [Tool 4 Site]()
@@ -80,7 +80,9 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * Code Review Summary: 
  
 * [CWE-613: Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html) - Chris 
-  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
+  * **Files Analyzed:** 
+    * [vaultTimeout.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/vaultTimeout.service.ts)
+    * [vault-timeout-input.component.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/angular/src/components/settings/vault-timeout-input.component.ts)
   * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
   * Code Review Summary: 
  
