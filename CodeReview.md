@@ -121,10 +121,11 @@ Initial code review activities of the BitWarden Desktop Application centered aro
 From the Code Review carried out:
 
 1. All input is permitted by the application. This includes special characters, code, inconsistent input, and potentially harmful malformed inputs.
-2. While all input is permitted, not user input is allowed to execute at any time in the code.
-3. Strong cryptography is utilized for Password encoding and message encryption
-4. The BitWarden Desktop Application implements a strong and sufficiently random Pseudo Random Number Generator.
-5. Session tokens and expiration are effectively managed, however some minor coding issues did present a slight threat.
+2. While all input is permitted, no user input is executed at any time.
+3. Logging, on screen prompts, and error messages do not reveal any sensitive information
+4. Strong cryptography is utilized for Password encoding and message encryption
+5. The BitWarden Desktop Application implements a strong and sufficiently random Pseudo Random Number Generator.
+6. Session tokens and expiration are effectively managed, however some minor coding issues did present a slight threat.
 
 While the input issues appear to find mitigation in a lack of all user input execution, it is likely that rigid input validation and whitelisting would reduce the chances of weakness exploitations simply by decreasing the domain of allowable input characters and formats.
 
