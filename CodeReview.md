@@ -107,6 +107,8 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 
 ### 5. OSS Contributions
 
+Given the continuation of this open source security engineering project, the following open source project contributions and interactions are deemed likely to benefit the BitWarden Desktop Application codebase: (1) the communication of all findings discovered during the course of this project to pertinent open source managers, (2) addressing input validation concerns discovered in the execution of the engineering activities carried out by this team, (3) reaffirmation and validation of strong encryption processes utilized within and between the BitWarden Desktop Application and the BitWarden servers, and (4) the introduction of input sanitization and validation protections into the BitWarden Desktop Application user interface.
+
 ### 6. Reflection
 
 ### 7. Project Collaboration Documentation
