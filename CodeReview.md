@@ -22,14 +22,14 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 3.1. Automated Scan Tools
 
 * Deepscan.io
-  * [Deeptscan Site](https://deepscan.io/)
-  * [Results]()
+  * [Deepscan Site](https://deepscan.io/)
+  * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/DeepScan#readme)
 * LGTM (Looks Good To Me)
   * [LGTM Site](https://lgtm.com/)
   * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/LGTM)
 * Embold - Chris
   * [Embold](https://app.embold.io/)
-  * [Results]()
+  * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/Embold)
 * Tool 4
   * [Tool 4 Site]()
   * [Results]()
