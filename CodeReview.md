@@ -83,8 +83,10 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * **Files Analyzed:** 
     * [vaultTimeout.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/vaultTimeout.service.ts)
     * [vault-timeout-input.component.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/angular/src/components/settings/vault-timeout-input.component.ts)
-  * Automated Scan Issues: There were a few items on the vaultTimeout.service.ts file that were of HIGH importance which included avoid-return-await errors and avoid-floating-promises errors.  These errors did not affect the application's security, however it could cause unexpected behaviors such as resolving at unexpected times.  Other issues were avoid-return await issues in which it could potentially add extra time to resolving the code.  In the vault-timeout-input.compontents.ts file, there was only an issue of avoiding implicit dependencies.  These were not highly critical to the program's security.  
-  * Code Review Summary: The automated scans did not result in revealing any critical issues with the security of the code.  There were just some minor coding issues that did not pose a severe threat to the security of the program or the data that it holds.  The vault-timeout.service.ts code checks to ensure that the session is valid every 10 seconds and the amount of time to wait is established in the policy of the program to 20 minutes.  The default timeout time is set to 0 minutes and then the time is then set to 60 minutes.  This ensures that the session can not stay on indefinitely.
+    
+  * **Automated Scan Issues:** There were a few items on the vaultTimeout.service.ts file that were of HIGH importance which included avoid-return-await errors and avoid-floating-promises errors.  These errors did not affect the application's security, however it could cause unexpected behaviors such as resolving at unexpected times.  Other issues were avoid-return await issues in which it could potentially add extra time to resolving the code.  In the vault-timeout-input.compontents.ts file, there was only an issue of avoiding implicit dependencies.  These were not highly critical to the program's security.  
+  
+  * **Code Review Summary:** The automated scans did not result in revealing any critical issues with the security of the code.  There were just some minor coding issues that did not pose a severe threat to the security of the program or the data that it holds.  The vault-timeout.service.ts code checks to ensure that the session is valid every 10 seconds and the amount of time to wait is established in the policy of the program to 20 minutes.  The default timeout time is set to 0 minutes and then the time is then set to 60 minutes.  This ensures that the session can not stay on indefinitely.
  
 * [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html) - Justin 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
@@ -92,9 +94,12 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * Code Review Summary: 
  
 * [CWE-1286: Improper Validation of Syntactic Correctness of Input](https://cwe.mitre.org/data/definitions/1286.html) - Chris 
-  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
-  * Code Review Summary: 
+  * **Files Analyzed:** 
+    * [userVerification.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/userVerification.service.ts)
+    
+  * **Automated Scan Issues:** The automated scan found two issues of medium criticality.  The first was a prefer type cast issue that found as-cast instead of type-cast.  The second issue was a binary expression operand order issue.  This meant that the literal expression should be on the right-hand side of a binary expression.
+  
+  * **Code Review Summary:** The program does a good job of verifying and validating input when needed.  The majority of the time, the data that is inputed from the user does not go anywhere and thus does not pose a threat to the program.
  
 * [CWE-1288: Improper Validation of Consistency within Input](https://cwe.mitre.org/data/definitions/1288.html) - Adam 
   * **Files Analyzed:** 
