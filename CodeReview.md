@@ -39,15 +39,15 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 
 ### 3. Selected Common Weakness Enumerations
 
-* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html) - Adam 
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
   * **Files Analyzed:** [Main Login Directory](https://github.com/bitwarden/desktop/tree/master/src/app/accounts), [login.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/login.component.html), [lock.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/lock.component.html), [view.component.html](https://github.com/bitwarden/desktop/blob/c385efdbd2f38149132ab1251c4f02bb088ac200/src/app/vault/view.component.html), [login.component.html](https://github.com/bitwarden/desktop/blob/master/src/app/accounts/login.component.html)
 
   * **Automated Scan Issues:** No relateive automated scan issues encountered.
 
-  * **Code Review Summary:** The application minimizes any exposure of sensitive data to unauthroized users.
+  * **Code Review Summary:** The application minimizes any exposure of sensitive data to unauthorized users during login, logging, and in all error messages displayed to unauthenticated users.
     * During [logging](https://github.com/DoctorEww/software-assurance/blob/main/Utility/log.jpg), very little sensitive data is logged.
     * When an incorrect authentication attempt is made, server scripts vendor.js and api.service.js respond as follows, "Username or password is incorrect. Try again." - [Response Link](https://github.com/DoctorEww/software-assurance/blob/main/Utility/BadAuth.jpg) This response reveals no data about the error that occured in authentication.
-    * The only data revealed to unathorized users is the password of the user that last logged in. This potentially reveals a slight amount of personal data.
+    * The only potentially sensitive data revealed to unathorized users is the password of the user that last logged in to the application. This potentially reveals a slight amount of personal data.
  
 * [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) - Drew 
   * **Files Analyzed:** [auth.service.ts](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/auth.service.ts#L124), [crypto.service.ts](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/crypto.service.ts#L480), [webcryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/webCryptoFunction.service.ts#L26)
