@@ -17,7 +17,7 @@ The code review strategy for the BitWarden Desktop Application is proposed as fo
 
 ### 3. Automated Scan Strategy
 
-The automated scan strategy employed in this project is as follows: (1) each team member uses a distinct automated scan tool, (2) automated scan results are posted to the [*automated scan*](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan) directory, (3) during CWE code evaluation, each member checks all automated scan results for correlation to the CWE under review. Any issues found within an automated scan that correlate to a CWE below will be evaluted in section 3.
+The automated scan strategy employed in this project is as follows: (1) each team member uses a distinct automated scan tool (if available), (2) automated scan results are posted to the [*automated scan*](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan) directory, (3) during CWE code evaluation, each member checks all automated scan results for correlation to the CWE under review. Any issues found within an automated scan that correlate to a CWE below will be evaluted in section 3.
 
 3.1. Automated Scan Tools
 
