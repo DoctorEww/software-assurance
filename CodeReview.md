@@ -118,7 +118,7 @@ Initial code review activities of the BitWarden Desktop Application centered aro
 * CWE-1286: Improper Validation of Syntactic Correctness of Input
 * CWE-1288: Improper Validation of Consistency within Input
 
-From the Code Review carried out:
+From the Code Review carried out, the following observations were made:
 
 1. All input is permitted by the application. This includes special characters, code, inconsistent input, and potentially harmful malformed inputs.
 2. While all input is permitted, no user input is executed at any time.
