@@ -105,7 +105,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 
 ### 4. Summary
 
-Initial code review activities of the BitWarden Desktop Application centered around the analysis and understanding of the cumulative discoveries found during the previous portions of this project. Most notably, these potential weaknesses fell into two primary categories: (1) input and (2) cryptography. From these potential weaknesses a collection of 10 Common Weakness Enumerations were gathered and divided by teammate in order to manually traverse specific, identified weakness potentialities. Further, each automated code review carried out on the BitWarden Desktop Application would be focused into the same CWE’s. These 10 CWE’s are as follows:
+Initial code review activities within the BitWarden Desktop Application centered around the analysis and understanding of the cumulative discoveries found during the previous portions of this project. Most notably, these potential weaknesses fell into two primary categories: (1) input and (2) cryptography. From these potential weaknesses a collection of 10 Common Weakness Enumerations were gathered and divided by teammate in order to manually traverse specific, identified weakness potentialities. Further, each automated code review carried out on the BitWarden Desktop Application would be focused into the same CWE’s. These 10 CWE’s are as follows:
 
 * CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
 * CWE-261: Weak Encoding for Password
