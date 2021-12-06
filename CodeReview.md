@@ -30,12 +30,6 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 * Embold - Chris
   * [Embold](https://app.embold.io/)
   * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/Embold)
-* Tool 4
-  * [Tool 4 Site]()
-  * [Results]()
-* Tool 5
-  * [Tool 5 Site]()
-  * [Results]()
 
 ### 3. Selected Common Weakness Enumerations
 
