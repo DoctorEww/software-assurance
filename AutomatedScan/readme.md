@@ -2,7 +2,7 @@
 
 # DeepScan
 
-We preformed one automated scan using DeepScan. This tool is capable of scanning public GitHub repos for code flaws. The results of our scan can be found [here](https://deepscan.io/dashboard/#view=project&tid=16140&pid=19350&bid=500664&prid=&subview=issues). This scan reported 7 issues total. 1 issue was labeled medium and 6 issues were labeled low. 
+We preformed one automated scan using DeepScan. This tool is capable of scanning public GitHub repos for code flaws. The results of our scan can be found [here](https://deepscan.io/dashboard/#view=project&tid=16140&pid=19350&bid=500664&prid=&subview=issues). We forked the BitWarden desktop branch and scanned that so that we could have more control with our scan. This scan reported 7 issues total. 1 issue was labeled medium and 6 issues were labeled low. 
 
 ## Medium
 
