@@ -90,16 +90,14 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * Code Review Summary: 
  
 * [CWE-1286: Improper Validation of Syntactic Correctness of Input](https://cwe.mitre.org/data/definitions/1286.html) - Chris 
-  * **Files Analyzed:** 
-    * [userVerification.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/userVerification.service.ts)
+  * **Files Analyzed:** [userVerification.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/userVerification.service.ts)
     
   * **Automated Scan Issues:** The automated scan found two issues of medium criticality.  The first was a prefer type cast issue that found as-cast instead of type-cast.  The second issue was a binary expression operand order issue.  This meant that the literal expression should be on the right-hand side of a binary expression.
   
   * **Code Review Summary:** The program does a good job of verifying and validating input when needed.  The majority of the time, the data that is inputed from the user does not go anywhere and thus does not pose a threat to the program.
  
 * [CWE-1288: Improper Validation of Consistency within Input](https://cwe.mitre.org/data/definitions/1288.html) - Adam 
-  * **Files Analyzed:** 
-    * [validation.service.ts](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts)
+  * **Files Analyzed:** [validation.service.ts](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts)
 
   * **Automated Scan Issues:** No pertinent automated scan issues encountered.
 
