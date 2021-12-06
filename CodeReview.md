@@ -121,3 +121,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 ### 5. OSS Contributions
 
 ### 6. Reflection
+
+### 7. Project Collaboration Documentation
+
+Find the Code Review Project [here](https://github.com/DoctorEww/software-assurance/projects/7)
