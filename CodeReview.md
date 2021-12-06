@@ -40,7 +40,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 ### 3. Selected Common Weakness Enumerations
 
 * [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
-  * **Files Analyzed:** [Main Login Directory](https://github.com/bitwarden/desktop/tree/master/src/app/accounts), [login.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/login.component.html), [lock.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/lock.component.html), [view.component.html](https://github.com/bitwarden/desktop/blob/c385efdbd2f38149132ab1251c4f02bb088ac200/src/app/vault/view.component.html), [login.component.html](https://github.com/bitwarden/desktop/blob/master/src/app/accounts/login.component.html)
+  * **Files Analyzed:** [login.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/login.component.html), [lock.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/lock.component.html), [view.component.html](https://github.com/bitwarden/desktop/blob/c385efdbd2f38149132ab1251c4f02bb088ac200/src/app/vault/view.component.html), [login.component.html](https://github.com/bitwarden/desktop/blob/master/src/app/accounts/login.component.html)
 
   * **Automated Scan Issues:** No relateive automated scan issues encountered.
 
