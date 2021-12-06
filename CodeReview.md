@@ -78,9 +78,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * Code Review Summary: 
  
 * [CWE-613: Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html) - Chris 
-  * **Files Analyzed:** 
-    * [vaultTimeout.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/vaultTimeout.service.ts)
-    * [vault-timeout-input.component.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/angular/src/components/settings/vault-timeout-input.component.ts)
+  * **Files Analyzed:** [vaultTimeout.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/vaultTimeout.service.ts), [vault-timeout-input.component.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/angular/src/components/settings/vault-timeout-input.component.ts)
     
   * **Automated Scan Issues:** There were a few items on the vaultTimeout.service.ts file that were of HIGH importance which included avoid-return-await errors and avoid-floating-promises errors.  These errors did not affect the application's security, however it could cause unexpected behaviors such as resolving at unexpected times.  Other issues were avoid-return await issues in which it could potentially add extra time to resolving the code.  In the vault-timeout-input.compontents.ts file, there was only an issue of avoiding implicit dependencies.  These were not highly critical to the program's security.  
   
