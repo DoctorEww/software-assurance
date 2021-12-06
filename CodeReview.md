@@ -60,9 +60,11 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * Code Review Summary: 
 
 * [CWE-326: Inadequate Encryption Strength (Code and Documentation)](https://cwe.mitre.org/data/definitions/326.html) - Jensen 
-  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
-  * Code Review Summary: 
+  * Files Analyzed: [cipher.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/cipher.service.ts), [nodeCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/node/src/services/nodeCryptoFunction.service.ts), [webCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/webCryptoFunction.service.ts)
+  * Automated Scan Issues: No related automated scan issues encountered.
+  * **Code Review Summary:**
+  * The handshaking and enciphering that takes place within *cipher.service.ts* is strong and correctly verifies signatures. The only funtion that I'd like to see improved is the saveNeverDomain(). As it is currently it appears to handle a blacklist function for bad domains. I'd prefer to see a whitelist system in place but it is possible that it is simply a ironically named function. 
+  * *nodeCryptoFunction.service.ts* handles the heavy lifting for all of the main crypto needs of the application. It's a well defined service list that uses well known algorithms that matches best practices currently in use. It relies on the nodeJS crypto library which is in good standing and capability. Rounds of pbkdf2 are correctly configured and incorrectly generated keys will be errored out. The only potential weakness of the library is the RSA-OAEP function being reliant on SHA-1, but nodeJS does not support SHA-256 RSA-OAEP currently. While this is a shortcoming, in the grand scheme this is not a problem since there are no current attacks on SHA-1 that are currently know to effect RSA-OAEP. There are benefits to moving to a stronger algorithm in case an attack is found in the future, but there is no active danger at this time. 
  
 * [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html) - Drew 
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
