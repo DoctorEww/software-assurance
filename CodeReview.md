@@ -53,10 +53,10 @@ The automated scan strategy employed in this project is as follows: (1) each tea
     * The only data revealed to unathorized users is the password of the user that last logged in. This potentially reveals a slight amount of personal data.
  
 * [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) 
-  * Files Analyzed:
-   * [cipher.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/cipher.service.ts)
-   * [nodeCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/node/src/services/nodeCryptoFunction.service.ts)
-   * [webCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/webCryptoFunction.service.ts)
+  * **Files Analyzed:**
+    * [cipher.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/cipher.service.ts)
+    * [nodeCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/node/src/services/nodeCryptoFunction.service.ts)
+    * [webCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/webCryptoFunction.service.ts)
   * **Automated Scan Issues:** No related automated scan issues encountered.
   * **Code Review Summary:**  We have concluded that BitWarden Desktop correctly uses a sufficiently complex password hashing algorithm. The application uses PBKDF2 SHA-256 to store passwords securely. PBKDF2 SHA-256 includes a local 100,001 rounds of password hashing with the email address as a salt and 100,000 rounds of password hashing on the server-side by default. The number of rounds the password is hashed is configurable. This process is detailed [here](https://bitwarden.com/help/article/what-encryption-is-used/). We are able to observe that the documentation is correctly followed within the code. We can see the login cryptography code [here](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/auth.service.ts#L124), [here](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/crypto.service.ts#L480), and [here](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/webCryptoFunction.service.ts#L26). This code is sparsely commented, but easy to follow. The cryptographic functions are eventually preformed in browser by [SubtleCrypto](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto) which has its own code review and cryptographic review process. 
 
@@ -75,9 +75,9 @@ The automated scan strategy employed in this project is as follows: (1) each tea
  
 * [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html)
   * Files Analyzed:
-   * [cipher.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/cipher.service.ts)
-   * [nodeCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/node/src/services/nodeCryptoFunction.service.ts)
-   * [webCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/webCryptoFunction.service.ts)
+    * [cipher.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/cipher.service.ts)
+    * [nodeCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/node/src/services/nodeCryptoFunction.service.ts)
+    * [webCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/webCryptoFunction.service.ts)
   * Automated Scan Issues: No related automated scan issues encountered.
   * Code Review Summary: Throughout our manual review process, we have concluded that BitWarden Desktop correctly uses a sufficiently random number generator. Bitwarden uses these random numbers to generate passwords users can execute on their site. To generate these random numbers, BitWarden Desktop calls low level browser functions that have been approved for cryptographic uses as shown [here](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues). We can see how the BitWarden code uses these random values [here](https://github.com/bitwarden/jslib/blob/5db94cc9d06ba478a29e9b625993108dfa0d7ec8/common/src/services/passwordGeneration.service.ts#L157), [here](https://github.com/bitwarden/jslib/blob/5db94cc9d06ba478a29e9b625993108dfa0d7ec8/common/src/services/crypto.service.ts#L666
 ), and [here](https://github.com/bitwarden/jslib/blob/5db94cc9d06ba478a29e9b625993108dfa0d7ec8/common/src/services/webCryptoFunction.service.ts#L300). After the generation of the random values, BitWarden correctly handles the random number by not reducing its entropy nor having bias in the generation technique. This code is sparsely commented, but easy to follow. 
@@ -93,9 +93,9 @@ The automated scan strategy employed in this project is as follows: (1) each tea
  
 * [CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html)
   * **Files Analyzed:** 
-  * [main.ts](https://github.com/bitwarden/desktop/blob/master/src/main.ts)
-  * [log.service.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/services/electronLog.service.ts)
-  * [electronLog.service.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/services/electronLog.service.ts)
+    * [main.ts](https://github.com/bitwarden/desktop/blob/master/src/main.ts)
+    * [log.service.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/services/electronLog.service.ts)
+    * [electronLog.service.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/services/electronLog.service.ts)
   * Automated Scan Issues: No related automated scanning information.
   * Code Review Summary: Analyzing the log services of the application, there appears to be no indication or usage of the services to write anything beyond standard informational, error, warnings, and debugger messages if necessary. Sensitive user information containing usernames, names, password, or other PII is not stored/written to any of the log files that are accessible to the user.
  
@@ -110,9 +110,9 @@ The automated scan strategy employed in this project is as follows: (1) each tea
  
 * [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html)
   * **Files Analyzed:** 
-  * [biometric.windows.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/biometric.windows.main.ts)
-  * [tray.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/tray.main.ts)
-  * [utils.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/utils.ts)
+    * [biometric.windows.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/biometric.windows.main.ts)
+    * [tray.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/tray.main.ts)
+    * [utils.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/utils.ts)
   * Automated Scan Issues: No related automated scanning information.
   * Code Review Summary: Bitwarden does not frequently make use of critical resources or assign permissions to clientside resouces. When it does seem to use external or system resources, the interaction is performed through the proper channels and well managed.
  
