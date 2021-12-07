@@ -23,19 +23,17 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 
 * Deepscan.io
   * [Deeptscan Site](https://deepscan.io/)
-  * [Results]()
+  * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/DeepScan)
 * LGTM (Looks Good To Me)
   * [LGTM Site](https://lgtm.com/)
   * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/LGTM)
 * Embold - Chris
   * [Embold](https://app.embold.io/)
-  * [Results]()
-* Tool 4
+  * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/Embold)
+* SonarCloud
   * [SonarCloud](https://sonarcloud.io/)
-  * [Results]()
-* Tool 5
-  * [Tool 5 Site]()
-  * [Results]()
+  * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/SonarCloud)
+
 
 ### 3. Selected Common Weakness Enumerations
 
