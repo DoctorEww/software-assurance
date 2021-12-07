@@ -27,7 +27,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 * LGTM (Looks Good To Me)
   * [LGTM Site](https://lgtm.com/)
   * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/LGTM)
-* Embold - Chris
+* Embold
   * [Embold](https://app.embold.io/)
   * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/Embold)
 * SonarCloud
@@ -59,9 +59,6 @@ The automated scan strategy employed in this project is as follows: (1) each tea
     * [webCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/webCryptoFunction.service.ts)
   * **Automated Scan Issues:** No related automated scan issues encountered.
   * **Code Review Summary:**  We have concluded that BitWarden Desktop correctly uses a sufficiently complex password hashing algorithm. The application uses PBKDF2 SHA-256 to store passwords securely. PBKDF2 SHA-256 includes a local 100,001 rounds of password hashing with the email address as a salt and 100,000 rounds of password hashing on the server-side by default. The number of rounds the password is hashed is configurable. This process is detailed [here](https://bitwarden.com/help/article/what-encryption-is-used/). We are able to observe that the documentation is correctly followed within the code. We can see the login cryptography code [here](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/auth.service.ts#L124), [here](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/crypto.service.ts#L480), and [here](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/webCryptoFunction.service.ts#L26). This code is sparsely commented, but easy to follow. The cryptographic functions are eventually preformed in browser by [SubtleCrypto](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto) which has its own code review and cryptographic review process. 
-
-
-
 
 * [CWE-326: Inadequate Encryption Strength (Code and Documentation)](https://cwe.mitre.org/data/definitions/326.html)
   * **Files Analyzed:** 
