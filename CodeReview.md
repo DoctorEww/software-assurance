@@ -74,7 +74,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
     * *nodeCryptoFunction.service.ts* handles the heavy lifting for all of the main crypto needs of the application. It's a well defined service list that uses well known algorithms that match best practices currently in use. It relies on the nodeJS crypto library which is in good standing and capability. Rounds of pbkdf2 are correctly configured and incorrectly generated keys will be errored out. The only potential weakness of the library is the RSA-OAEP function being reliant on SHA-1, but nodeJS does not support SHA-256 RSA-OAEP currently. While this is a shortcoming, in the grand scheme this is not a active issue since there are no current attacks on SHA-1 that are currently known to effect RSA-OAEP. There are benefits to moving to a stronger algorithm in case an attack is found in the future, but there is no active danger at this time. 
  
 * [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html)
-  * Files Analyzed:
+  * **Files Analyzed:**
     * [cipher.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/cipher.service.ts)
     * [nodeCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/node/src/services/nodeCryptoFunction.service.ts)
     * [webCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/webCryptoFunction.service.ts)
