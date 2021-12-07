@@ -106,7 +106,6 @@ The automated scan strategy employed in this project is as follows: (1) each tea
  
 * [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html)
   * **Files Analyzed:** 
-
     * [biometric.windows.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/biometric.windows.main.ts)
     * [tray.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/tray.main.ts)
     * [utils.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/utils.ts)
