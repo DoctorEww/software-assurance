@@ -92,8 +92,8 @@ The automated scan strategy employed in this project is as follows: (1) each tea
     * [main.ts](https://github.com/bitwarden/desktop/blob/master/src/main.ts)
     * [log.service.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/services/electronLog.service.ts)
     * [electronLog.service.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/services/electronLog.service.ts)
-  * Automated Scan Issues: No related automated scanning information.
-  * Code Review Summary: Analyzing the log services of the application, there appears to be no indication or usage of the services to write anything beyond standard informational, error, warnings, and debugger messages if necessary. Sensitive user information containing usernames, names, password, or other PII is not stored/written to any of the log files that are accessible to the user.
+  * **Automated Scan Issues:** No related automated scanning information.
+  * **Code Review Summary:** Analyzing the log services of the application, there appears to be no indication or usage of the services to write anything beyond standard informational, error, warnings, and debugger messages if necessary. Sensitive user information containing usernames, names, password, or other PII is not stored/written to any of the log files that are accessible to the user.
  
 * [CWE-613: Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html)
   * **Files Analyzed:** 
