@@ -88,9 +88,12 @@ The automated scan strategy employed in this project is as follows: (1) each tea
     * The crypto services that reach outside the local host all properly retrieve signatures and encipher them using public key based algorithms. Signature caching is disabled forcing the application to retrive a new set each time. This could potentially open the application to a fringe case DNS poisoning attack, but the supporting requirements for this attack to take place would require a pre-compromised host (where a different attack would be much faster and more succesful) or a user willingly negligent enough to ignore doomsday-like warning messages to install a bad certificate. Overall the verification services are water-tight and strongly resist compromise.
  
 * [CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html) - Justin 
-  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
-  * Code Review Summary: 
+  * **Files Analyzed:** 
+  * [main.ts](https://github.com/bitwarden/desktop/blob/master/src/main.ts)
+  * [log.service.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/services/electronLog.service.ts)
+  * [electronLog.service.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/services/electronLog.service.ts)
+  * Automated Scan Issues: No related automated scanning information.
+  * Code Review Summary: Analyzing the log services of the application, there appears to be no indication or usage of the services to write anything beyond standard informational, error, warnings, and debugger messages if necessary. Sensitive user information containing usernames, names, password, or other PII is not stored/written to any of the log files that are accessible to the user.
  
 * [CWE-613: Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html) - Chris 
   * **Files Analyzed:** 
@@ -102,9 +105,12 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * **Code Review Summary:** The automated scans did not result in revealing any critical issues with the security of the code.  There were just some minor coding issues that did not pose a severe threat to the security of the program or the data that it holds.  The vault-timeout.service.ts code checks to ensure that the session is valid every 10 seconds and the amount of time to wait is established in the policy of the program to 20 minutes.  The default timeout time is set to 0 minutes and then the time is then set to 60 minutes.  This ensures that the session can not stay on indefinitely.
  
 * [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html) - Justin 
-  * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
-  * Code Review Summary: 
+  * **Files Analyzed:** 
+  * [biometric.windows.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/biometric.windows.main.ts)
+  * [tray.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/tray.main.ts)
+  * [utils.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/utils.ts)
+  * Automated Scan Issues: No related automated scanning information.
+  * Code Review Summary: Bitwarden does not frequently make use of critical resources or assign permissions to clientside resouces. When it does seem to use external or system resources, the interaction is performed through the proper channels and well managed.
  
 * [CWE-1286: Improper Validation of Syntactic Correctness of Input](https://cwe.mitre.org/data/definitions/1286.html) - Chris 
   * **Files Analyzed:** 
@@ -128,3 +134,5 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 ### 5. OSS Contributions
 
 ### 6. Reflection
+
+Our approach to this portion of the assignment started off as with a lot of discussion and interactions between one another. Before meeting with professor Gandhi, we wanted to be sure we at least had some initial results that could be presented and discussed. We used a cloud-based automated review tool for our first scan set. Potential problems and vulnerabilities were discussed and distributed among the group. Communication was really fluid and each team member was encouraged to share scan results from their own automated scans. Manual code review questions and concerns were quickly addressed by fellow group members and resolved. Compared to other phases in the project, this phase was very organized compared to the first phase of the project when we all began.
