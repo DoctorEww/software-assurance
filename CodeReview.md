@@ -37,7 +37,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 
 ### 3. Selected Common Weakness Enumerations
 
-* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html) - Adam 
+* [CWE-200: Exposure of Sensitive Information to an Unauthorized Actor](https://cwe.mitre.org/data/definitions/200.html)
   * **Files Analyzed:** 
     * [Main Login Directory](https://github.com/bitwarden/desktop/tree/master/src/app/accounts)
     * [login.component.html](https://github.com/bitwarden/desktop/blob/b83058ecab843a443a048e1a57ab20650e0b4516/src/app/accounts/login.component.html)
@@ -52,7 +52,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
     * When an incorrect authentication attempt is made, server scripts vendor.js and api.service.js respond as follows, "Username or password is incorrect. Try again." - [Response Link](https://github.com/DoctorEww/software-assurance/blob/main/Utility/BadAuth.jpg) This response reveals no data about the error that occured in authentication.
     * The only data revealed to unathorized users is the password of the user that last logged in. This potentially reveals a slight amount of personal data.
  
-* [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) - Drew 
+* [CWE-261: Weak Encoding for Password](https://cwe.mitre.org/data/definitions/261.html) 
   * **Files Analyzed:** [FileName1](http://url.to.file), [FileName2](http://url.to.file)
   * **Automated Scan Issues:** No related automated scan issues encountered.
   * **Code Review Summary:**  We have concluded that BitWarden Desktop correctly uses a sufficiently complex password hashing algorithm. The application uses PBKDF2 SHA-256 to store passwords securely. PBKDF2 SHA-256 includes a local 100,001 rounds of password hashing with the email address as a salt and 100,000 rounds of password hashing on the server-side by default. The number of rounds the password is hashed is configurable. This process is detailed [here](https://bitwarden.com/help/article/what-encryption-is-used/). We are able to observe that the documentation is correctly followed within the code. We can see the login cryptography code [here](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/auth.service.ts#L124), [here](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/crypto.service.ts#L480), and [here](https://github.com/bitwarden/jslib/blob/cb00604617a3d38fb450d900dbdf63b636ae01f6/common/src/services/webCryptoFunction.service.ts#L26). This code is sparsely commented, but easy to follow. The cryptographic functions are eventually preformed in browser by [SubtleCrypto](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto) which has its own code review and cryptographic review process. 
@@ -60,7 +60,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 
 
 
-* [CWE-326: Inadequate Encryption Strength (Code and Documentation)](https://cwe.mitre.org/data/definitions/326.html) - Jensen 
+* [CWE-326: Inadequate Encryption Strength (Code and Documentation)](https://cwe.mitre.org/data/definitions/326.html)
   * **Files Analyzed:** 
     * [cipher.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/cipher.service.ts)
     * [nodeCryptoFunction.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/node/src/services/nodeCryptoFunction.service.ts)
@@ -70,13 +70,13 @@ The automated scan strategy employed in this project is as follows: (1) each tea
     * The handshaking and enciphering that takes place within *cipher.service.ts* is strong and correctly verifies signatures. The only funtion that I'd like to see improved is the saveNeverDomain(). As it is currently it appears to handle a blacklist function for bad domains. I'd prefer to see a whitelist system in place but it is possible that it is simply a ironically named function. The code is well formatted and clearly named.
     * *nodeCryptoFunction.service.ts* handles the heavy lifting for all of the main crypto needs of the application. It's a well defined service list that uses well known algorithms that match best practices currently in use. It relies on the nodeJS crypto library which is in good standing and capability. Rounds of pbkdf2 are correctly configured and incorrectly generated keys will be errored out. The only potential weakness of the library is the RSA-OAEP function being reliant on SHA-1, but nodeJS does not support SHA-256 RSA-OAEP currently. While this is a shortcoming, in the grand scheme this is not a active issue since there are no current attacks on SHA-1 that are currently known to effect RSA-OAEP. There are benefits to moving to a stronger algorithm in case an attack is found in the future, but there is no active danger at this time. 
  
-* [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html) - Drew 
+* [CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)](https://cwe.mitre.org/data/definitions/338.html)
   * Files Analyzed: [FileName1](http://url.to.file), [FileName2](http://url.to.file)
-  * Automated Scan Issues: Be sure to link to the automated scan in question. i.e. Per [Deepscan.io](url.to.scan) blah, blah, blah.
+  * Automated Scan Issues: No related automated scan issues encountered.
   * Code Review Summary: Throughout our manual review process, we have concluded that BitWarden Desktop correctly uses a sufficiently random number generator. Bitwarden uses these random numbers to generate passwords users can execute on their site. To generate these random numbers, BitWarden Desktop calls low level browser functions that have been approved for cryptographic uses as shown [here](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues). We can see how the BitWarden code uses these random values [here](https://github.com/bitwarden/jslib/blob/5db94cc9d06ba478a29e9b625993108dfa0d7ec8/common/src/services/passwordGeneration.service.ts#L157), [here](https://github.com/bitwarden/jslib/blob/5db94cc9d06ba478a29e9b625993108dfa0d7ec8/common/src/services/crypto.service.ts#L666
 ), and [here](https://github.com/bitwarden/jslib/blob/5db94cc9d06ba478a29e9b625993108dfa0d7ec8/common/src/services/webCryptoFunction.service.ts#L300). After the generation of the random values, BitWarden correctly handles the random number by not reducing its entropy nor having bias in the generation technique. This code is sparsely commented, but easy to follow. 
  
-* [CWE-347: Improper Verification of Cryptographic Signature](https://cwe.mitre.org/data/definitions/347.html) - Jensen 
+* [CWE-347: Improper Verification of Cryptographic Signature](https://cwe.mitre.org/data/definitions/347.html)
   * **Files Analyzed:** 
     * [api.service.ts](https://github.com/bitwarden/jslib/blob/5db94cc9d06ba478a29e9b625993108dfa0d7ec8/common/src/services/api.service.ts)
     * [auth.service.ts](https://github.com/bitwarden/jslib/blob/5db94cc9d06ba478a29e9b625993108dfa0d7ec8/common/src/services/auth.service.ts)
@@ -85,7 +85,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * **Code Review Summary:** 
     * The crypto services that reach outside the local host all properly retrieve signatures and encipher them using public key based algorithms. Signature caching is disabled forcing the application to retrive a new set each time. This could potentially open the application to a fringe case DNS poisoning attack, but the supporting requirements for this attack to take place would require a pre-compromised host (where a different attack would be much faster and more succesful) or a user willingly negligent enough to ignore doomsday-like warning messages to install a bad certificate. Overall the verification services are water-tight and strongly resist compromise.
  
-* [CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html) - Justin 
+* [CWE-532: Insertion of Sensitive Information into Log File](https://cwe.mitre.org/data/definitions/532.html)
   * **Files Analyzed:** 
   * [main.ts](https://github.com/bitwarden/desktop/blob/master/src/main.ts)
   * [log.service.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/services/electronLog.service.ts)
@@ -93,7 +93,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * Automated Scan Issues: No related automated scanning information.
   * Code Review Summary: Analyzing the log services of the application, there appears to be no indication or usage of the services to write anything beyond standard informational, error, warnings, and debugger messages if necessary. Sensitive user information containing usernames, names, password, or other PII is not stored/written to any of the log files that are accessible to the user.
  
-* [CWE-613: Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html) - Chris 
+* [CWE-613: Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html)
   * **Files Analyzed:** 
     * [vaultTimeout.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/vaultTimeout.service.ts)
     * [vault-timeout-input.component.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/angular/src/components/settings/vault-timeout-input.component.ts)
@@ -102,7 +102,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   
   * **Code Review Summary:** The automated scans did not result in revealing any critical issues with the security of the code.  There were just some minor coding issues that did not pose a severe threat to the security of the program or the data that it holds.  The vault-timeout.service.ts code checks to ensure that the session is valid every 10 seconds and the amount of time to wait is established in the policy of the program to 20 minutes.  The default timeout time is set to 0 minutes and then the time is then set to 60 minutes.  This ensures that the session can not stay on indefinitely.
  
-* [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html) - Justin 
+* [CWE-732: Incorrect Permission Assignment for Critical Resource](https://cwe.mitre.org/data/definitions/732.html)
   * **Files Analyzed:** 
   * [biometric.windows.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/biometric.windows.main.ts)
   * [tray.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/tray.main.ts)
@@ -110,7 +110,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   * Automated Scan Issues: No related automated scanning information.
   * Code Review Summary: Bitwarden does not frequently make use of critical resources or assign permissions to clientside resouces. When it does seem to use external or system resources, the interaction is performed through the proper channels and well managed.
  
-* [CWE-1286: Improper Validation of Syntactic Correctness of Input](https://cwe.mitre.org/data/definitions/1286.html) - Chris 
+* [CWE-1286: Improper Validation of Syntactic Correctness of Input](https://cwe.mitre.org/data/definitions/1286.html)
   * **Files Analyzed:** 
     * [userVerification.service.ts](https://github.com/bitwarden/jslib/blob/78429aa7201989ad74a9ca36cc6832fcce0d4aee/common/src/services/userVerification.service.ts)
     
@@ -118,7 +118,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
   
   * **Code Review Summary:** The program does a good job of verifying and validating input when needed.  The majority of the time, the data that is inputed from the user does not go anywhere and thus does not pose a threat to the program.
  
-* [CWE-1288: Improper Validation of Consistency within Input](https://cwe.mitre.org/data/definitions/1288.html) - Adam 
+* [CWE-1288: Improper Validation of Consistency within Input](https://cwe.mitre.org/data/definitions/1288.html)
   * **Files Analyzed:** 
     * [validation.service.ts](https://github.com/bitwarden/jslib/blob/1016bbfb9eb28c220de8d2ab86d1f2757328f254/angular/src/services/validation.service.ts)
 
