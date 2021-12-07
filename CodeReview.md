@@ -22,7 +22,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 3.1. Automated Scan Tools
 
 * Deepscan.io
-  * [Deeptscan Site](https://deepscan.io/)
+  * [Deepscan Site](https://deepscan.io/)
   * [Results](https://github.com/DoctorEww/software-assurance/tree/main/AutomatedScan/DeepScan)
 * LGTM (Looks Good To Me)
   * [LGTM Site](https://lgtm.com/)
