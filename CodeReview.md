@@ -109,8 +109,8 @@ The automated scan strategy employed in this project is as follows: (1) each tea
     * [biometric.windows.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/biometric.windows.main.ts)
     * [tray.main.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/tray.main.ts)
     * [utils.ts](https://github.com/bitwarden/jslib/blob/master/electron/src/utils.ts)
-  * Automated Scan Issues: No related automated scanning information.
-  * Code Review Summary: Bitwarden does not frequently make use of critical resources or assign permissions to clientside resouces. When it does seem to use external or system resources, the interaction is performed through the proper channels and well managed.
+  * **Automated Scan Issues:** No related automated scanning information.
+  * **Code Review Summary:** Bitwarden does not frequently make use of critical resources or assign permissions to clientside resouces. When it does seem to use external or system resources, the interaction is performed through the proper channels and well managed.
  
 * [CWE-1286: Improper Validation of Syntactic Correctness of Input](https://cwe.mitre.org/data/definitions/1286.html)
   * **Files Analyzed:** 
