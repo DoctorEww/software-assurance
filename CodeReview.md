@@ -46,7 +46,7 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 
   * **Automated Scan Issues:** No relateive automated scan issues encountered.
 
-  * **Code Review Summary:** The application minimizes any exposure of sensitive data to unauthorized users.
+  * **Code Review Summary:** The application minimizes the exposure of sensitive data to unauthorized users.
     * During [logging](https://github.com/DoctorEww/software-assurance/blob/main/Utility/log.jpg), very little sensitive data is logged.
     * When an incorrect authentication attempt is made, server scripts vendor.js and api.service.js respond as follows, ["Username or password is incorrect. Try again."](https://github.com/DoctorEww/software-assurance/blob/main/Utility/BadAuth.jpg) This response reveals no data about the error that occured in authentication.
     * The only potentially sensitive data revealed to unathorized users is the email address of the user that last logged in. This potentially reveals a slight amount risk to personal data, however doesn't pose a significant threat to the security of the application.
