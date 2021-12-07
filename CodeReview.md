@@ -135,7 +135,36 @@ The automated scan strategy employed in this project is as follows: (1) each tea
 
 ### 4. Summary
 
+Initial code review activities of the BitWarden Desktop Application centered around the analysis and understanding of the cumulative discoveries found during the previous portions of this project. Most notably, these potential weaknesses fell into two primary categories: (1) input and (2) cryptography. From these potential weaknesses a collection of 10 Common Weakness Enumerations were gathered and divided by teammate in order to manually traverse specific, identified weakness potentialities. Further, each automated code review carried out on the BitWarden Desktop Application would be focused into the same CWE’s. These 10 CWE’s are as follows:
+
+* CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
+* CWE-261: Weak Encoding for Password
+* CWE-326: Inadequate Encryption Strength (Code and Documentation
+* CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)
+* CWE-347: Improper Verification of Cryptographic Signature
+* CWE-532: Insertion of Sensitive Information into Log File
+* CWE-613: Insufficient Session Expiration
+* CWE-732: Incorrect Permission Assignment for Critical Resource
+* CWE-1286: Improper Validation of Syntactic Correctness of Input
+* CWE-1288: Improper Validation of Consistency within Input
+
+From the Code Review carried out:
+
+1. All input is permitted by the application. This includes special characters, code, inconsistent input, and potentially harmful malformed inputs.
+2. While all input is permitted, not user input is allowed to execute at any time in the code.
+3. Strong cryptography is utilized for Password encoding and message encryption
+4. The BitWarden Desktop Application implements a strong and sufficiently random Pseudo Random Number Generator.
+5. Session tokens and expiration are effectively managed, however some minor coding issues did present a slight threat.
+
+While the input issues appear to find mitigation in a lack of all user input execution, it is likely that rigid input validation and whitelisting would reduce the chances of weakness exploitations simply by decreasing the domain of allowable input characters and formats.
+
+In terms of encryption, the BitWarden Desktop Application exhibits no concerning flaws. Each cryptographic protocol analyzed revealed a well designed, well planned, security minded code base. Passwords are hashed using PBKDF2 SHA-256 with 100,001 rounds of hashing and a suitable Pseudo Random Number Generator is used to generate randomness. The only minimal flaw discovered is the reliance of the RSA-OAEP function on SHA-1 hashing. While this indicates a slight issue, no current attacks on SHA-1 are known to effect RSA-OAEP implementations.
+
+As a means to reduce the accidental breaching of personally identifiable information, the BitWarden Desktop Application reveals no sensitive information in either logging, on screen prompts, or in the communication of errors. When attempting to login, unauthorized credentials simply indicate that either the username or the password was incorrect. All other errors are handled internally and withheld from local logs. The data included in these logs generally includes timestamp information or data already accessible to the Operating System account.
+
 ### 5. OSS Contributions
+
+Given the continuation of this open source security engineering project, the following open source project contributions and interactions are deemed likely to benefit the BitWarden Desktop Application codebase: (1) the communication of all findings discovered during the course of this project to pertinent open source managers, (2) addressing input validation concerns discovered in the execution of the engineering activities carried out by this team, (3) reaffirmation and validation of strong encryption processes utilized within and between the BitWarden Desktop Application and the BitWarden servers, and (4) the introduction of input sanitization and validation protections into the BitWarden Desktop Application user interface.
 
 ### 6. Reflection
 
